@@ -446,6 +446,8 @@
         width: 99px
         height: 99px
         min-width: 99px
+      &__quote
+        top: 0
 
 
 .subscribe-form
@@ -472,10 +474,69 @@
         margin: 0
 
 
+.footer
+  .container
+    padding: 30px 0 37px
 
+    display: block
+    &:after
+      content: ''
+      display: block
+      clear: both
 
+  &__site-info
+    width: 100%
+    clear: both
+  &__logo
+    display: block
+    width: 168px
+  &__license
+    display: none
+  &__menu
+    margin-top: 20px
+    grid-template-columns: 191px 203px
+    margin-right: 0
+    float: left
+    .menu
 
+      &__items
+        padding-top: 0
+        li
+          margin-top: 12px
+          a
+            font-size: 12px
 
+  &__contacts
+    margin-top: -45px
+    width: 295px
+    float: right
+    .btn
+      margin-top: 20px
+    .contacts
+      &__phone
+        font-size: 20px
+      &__email
+        margin-top: 15px
+      &__address
+        margin-top: 15px
+        font-size: 15px
+        line-height: 140%
+      &__socials
+        margin-top: 15px
+
+  &__sub-info
+    width: 295px
+    display: block
+    //margin-left: 394px
+    margin-top: 15px
+    float: right
+    .link
+      margin-top: 10px
+      display: table
+    .dev
+      margin-top: 10px
+      a
+        color: #636365
 
 
 
