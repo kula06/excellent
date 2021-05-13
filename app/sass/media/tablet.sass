@@ -1,0 +1,491 @@
+.container
+  width: 738px
+
+.header
+  &__logo
+    order: -1
+    width: 120px
+    margin-right: 68px
+  &__city
+    width: 124px
+    margin-right: 50px
+    select
+      font-size: 15px
+  &__menu
+    display: none
+  &__menu-btn
+    width: 30px
+    height: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background: #F87E1B
+    border-radius: 50%
+    margin-left: 25px
+    span
+      width: 16px
+      height: 1px
+      margin: 1.5px -0px
+      display: block
+      background: #fff
+      cursor: pointer
+  &__search-form
+    width: 19px
+    //margin-right: 39px
+  &__phone
+    font-size: 14px
+    line-height: 130%
+    margin-left: 39px
+  &__newline
+    display: none
+  .btn
+    display: none
+
+
+.main-banner
+  .container
+    padding: 58px 0 122px
+    min-height: 0
+  h1
+    font-size: 24px
+  p
+    margin-top: 10px
+    font-size: 15px
+    max-width: 370px
+
+
+  &__flags
+    display: none
+  &__lines
+    display: none
+  &__girl
+    width: 399px
+    height: 419px
+    background-image: url(../img/banner-girl-tablet.png)
+    right: -15px
+
+.btn
+  &--main-orange
+    min-width: 0
+    font-size: 15px
+    padding: 0 15px
+    height: 48px
+    padding-bottom: 3px
+
+.text-block
+  .container
+    padding-bottom: 60px
+  .company-stats
+    margin-bottom: 55px
+    margin-top: -50px
+    .stat-item
+      padding: 15px 17px 26px 20px
+      .icon
+        width: 50px
+        height: 50px
+        margin-left: auto
+        img
+          max-height: 33px
+          width: auto
+      .value
+        margin-top: 0
+        font-size: 38px
+      .desc
+        margin-top: 10px
+        font-size: 13px
+
+
+  .picture-side
+    width: 345px
+    height: 389px
+  .text-side
+    width: 345px
+    h2
+      font-size: 26px
+    ul
+      margin-top: 24px
+      li
+        margin: 10px 0 0 0
+        padding-left: 45px
+        font-size: 15px
+        &:before
+          width: 25px
+          height: 25px
+          background-size: 12px 10px
+          background-image: url(../img/mark-orange-bold.svg)
+    .btn
+      margin: 30px 0 0
+      width: 100%
+
+
+
+  &--woman
+    .container
+      padding: 50px 0 60px
+      justify-content: flex-start
+    .text-side
+       h2
+         width: 430px
+    .woman-side
+      width: 309px
+      //height: 372px
+      margin: 40px 0 0 51px
+      img
+        width: 100%
+        height: auto
+      .emoji
+        top: 83px
+        left: -14px
+        width: 83px
+        height: 90px
+      .quote
+        left: 189px
+        top: 75px
+        width: 131px
+        padding: 17px 17px 20px 20px
+        font-size: 11px
+        &:before
+          width: 38px
+          height: 28px
+          left: -32px
+          top: 24px
+
+
+.issue-block
+  .container
+    padding: 60px 0
+  h2
+    font-size: 26px
+    br
+      display: none
+  p
+    margin-top: 15px
+    font-size: 15px
+
+  .info-items
+    margin-left: -26px
+    //width: 100%
+    .info-item
+      margin-left: 26px
+      width: calc(25% - 26px)
+
+      .icon
+        height: 160px
+        img
+          width: 94px
+          height: 93px
+          object-fit: contain
+      .desc
+        margin-top: 10px
+        font-size: 14px
+
+  .stat-info
+    margin-top: 42px
+    width: 100%
+    display: flex
+    align-items: flex-start
+    &__items
+      width: 529px
+      margin: 0
+      padding: 27px 0 0
+      display: flex
+      &:before
+        width: 42px
+        height: 42px
+        right: 0
+        top: -15px
+        background-size: 22px 16px
+      .stat
+        padding: 0 12px 27px 16px
+        max-width: 233px
+        &:not(:first-child)
+          padding-left: 34px
+          padding-right: 28px
+          max-width: 100%
+          border-top: 0
+          border-left: 1px solid rgba(255,255,255,.3)
+        .desc
+          font-size: 13px
+          line-height: 140%
+
+    &__manager
+      margin: 0
+      margin-left: 31px
+      width: 150px
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      .manager
+        &__picture
+
+        &__info
+          margin-left: 0
+          margin-top: 10px
+
+.awards-block
+  .container
+    padding: 60px 0 67px
+  h2
+    font-size: 26px
+  &__items
+    margin-top: 34px
+
+
+.reviews
+  .container
+    padding: 60px 0 50px
+  h2
+    font-size: 26px
+
+  &__slider
+    max-width: 594px
+    .review
+      &__user
+        .user
+          &__picture
+            width: 46px
+            min-width: 46px
+            height: 46px
+            margin-right: 13px
+          &__info
+            .info-header
+              .name
+                font-size: 15px
+              .ig-link
+                width: 22px
+                height: 22px
+            .info-extend
+              margin-top: 5px
+              font-size: 16px
+      &__picture
+        height: 179px
+      &__text
+        margin-top: 20px
+        font-size: 13px
+      &__more
+        margin: 15px 0 0
+        font-size: 14px
+
+    .owl-item.active~.owl-item:not(.active)
+      opacity: 1
+
+
+.owl-carousel
+  .owl-dots
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 48px 0 0
+    width: 738px
+    .owl-dot
+      width: 6px
+      height: 6px
+      border-radius: 50%
+      background: #BFB6D1
+      opacity: .3
+      margin: 0 10px
+      &.active
+        background: #3661F7
+        opacity: 1
+
+.world-block
+  .container
+    padding: 50px 0
+  h2
+    font-size: 26px
+
+  &__map
+    display: none
+
+  &__countries
+    width: 100%
+    margin-top: 23px
+    .countries
+      &__block
+        padding: 0
+        background: transparent
+        box-shadow: none
+      &__title
+        display: none
+      &__list
+        max-height: inherit
+        display: flex
+        flex-wrap: wrap
+        margin-left: -28px
+      &__item
+        margin-top: 0
+        margin-left: 28px
+        width: calc(100% / 3 - 28px)
+        padding: 10px 0
+        border-bottom: 1px solid #EFEFEF
+        background: url(../img/country-arrow.svg) no-repeat center right / 7px 11px
+
+  &__tip-text
+    margin: 20px 0 0 0
+    max-width: 504px
+    width: 100%
+    br
+      display: none
+
+  .info-block
+    margin-top: 36px
+    max-width: 100%
+
+
+.info-block
+  padding-left: 27px
+  max-width: 100%
+  &:before
+    left: 0
+
+  &__link
+    margin-top: 8px
+
+  &--orange
+    max-width: 100%
+
+
+.awards-block
+  &__items
+    margin-left: -17px
+    //width: 1069px
+    width: 1086px
+    .award
+      margin-left: 17px
+      &:last-child
+        opacity: .3
+
+.cooperate
+
+  &--orange
+    .container
+      padding: 40px 0 55px
+
+  .container
+    padding: 50px 0
+    &:before
+      width: 100vw
+      right: calc((100% - 100vw) / 2)
+      height: 282px
+      border-radius: 0px 50px 0px 0px
+
+
+  h2
+    font-size: 26px
+  .info-block
+    order: 99
+    margin-top: 30px
+    max-width: 600px
+
+  &__slider
+    margin-top: 34px
+    max-width: 596px
+    .owl-stage-outer
+      overflow: visible
+    .owl-item
+      &:not(.active)
+        opacity: .3
+    .owl-dots
+      margin-top: 31px
+
+.wecare
+  .container
+    padding: 43px 0 60px
+
+  h2
+    max-width: 514px
+    font-size: 26px
+  p
+    margin-top: 15px
+    font-size: 15px
+    max-width: 449px
+  &__items
+    margin: 9px 0 0 -22px
+    .care-item
+      margin-top: 22px
+      margin-left: 22px
+      width: calc(50% - 22px)
+      padding: 30px 45px 30px 23px
+      .icon
+        width: 80px
+        min-width: 80px
+        height: 80px
+        margin-right: 20px
+      .text
+        font-size: 15px
+        line-height: 140%
+
+
+.freeorder
+  .container
+    //padding: 0 0 60px
+    display: block
+
+  &__form
+    width: 100%
+    padding: 60px 0
+
+    &:before
+      right: calc((100% - 100vw) / 2)
+      border-radius: 0px 50px 0px 0px
+
+    h2
+      font-size: 20px
+      line-height: 110%
+    p
+      font-size: 15px
+      line-height: 140%
+
+  &__expert
+    padding: 50px 0 60px
+    padding-left: 370px
+    flex-direction: row
+    .expert
+      &__picture
+        width: 99px
+        height: 99px
+        min-width: 99px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.endfile

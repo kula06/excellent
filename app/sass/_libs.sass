@@ -1,0 +1,15 @@
+//@import "../libs/bootstrap-grid/bootstrap-grid.css" // Теперь необходимо казывать расширение .css
+
+
+@import "../libs/owl/owl.carousel.min.css"
+@import "../libs/mCustom/jquery.mCustomScrollbar.css"
+
+@mixin placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content

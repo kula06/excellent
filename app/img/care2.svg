@@ -1,0 +1,24 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="100" height="100" fill="white"/>
+<path d="M80.4627 37.0423V34.9309C80.4627 20.1892 66.7191 8.25 49.7509 8.25C32.7826 8.25 19.0391 20.1892 19.0391 34.9309V37.4646" stroke="#3661F7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M59.3477 86.949C70.8646 85.0295 79.4255 75.1634 81.7097 65.8347" stroke="#3661F7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.5335 41.7452L15.3341 38.3861C16.8889 37.0041 19.1923 36.8697 20.9198 38.0406C21.9179 38.7316 22.5898 39.7681 22.8201 40.9582L26.5823 61.2856C26.7934 62.4757 26.5439 63.685 25.8529 64.6831C24.6628 66.4106 22.4746 67.1017 20.5167 66.3722L15.7564 64.6063C14.2592 64.0497 13.1651 62.7444 12.8772 61.1704L10.0747 45.9873C9.78677 44.4133 10.3434 42.8009 11.5335 41.7452Z" stroke="#3661F7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M88.4478 41.7452L84.6472 38.3861C83.0924 37.0041 80.789 36.8697 79.0615 38.0406C78.0633 38.7316 77.3915 39.7681 77.1612 40.9582L73.399 61.2856C73.1878 62.4757 73.4374 63.685 74.1284 64.6831C75.3185 66.4106 77.5067 67.1017 79.4646 66.3722L84.2249 64.6063C85.7221 64.0497 86.8162 62.7444 87.1041 61.1704L89.9258 45.9873C90.2137 44.4133 89.657 42.8009 88.4478 41.7452Z" stroke="#3661F7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M67.0263 54.3177H53.5898V51.9375L60.8263 40.8813H63.1873V61.9957" stroke="#F87E1B" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.7509 60.0762H36.3145V58.0991C38.3299 56.6211 42.4952 53.5691 43.9924 52.3982C45.6624 51.093 47.8314 48.8472 47.8314 45.6992C47.8314 42.3977 45.2593 40.8813 42.0729 40.8813C38.8866 40.8813 36.3145 42.6088 36.3145 44.7203V46.6398" stroke="#F87E1B" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55.5092 90.788H43.9923C41.8809 90.788 40.1533 89.0605 40.1533 86.949V85.0295C40.1533 82.9181 41.8809 81.1906 43.9923 81.1906H55.5092C57.6207 81.1906 59.3482 82.9181 59.3482 85.0295V86.949C59.3482 89.0605 57.6399 90.788 55.5092 90.788Z" stroke="#3661F7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="9" y="37" width="82" height="55">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M90.5 44.25L81 37.25L77.5 39.25L73.5 60.25L75 64.75L77.5 67.25L86.5 63.75L90.5 44.25ZM19.5 37.75H16L9.5 44.25L15 64.25L22 67.75L27 64.25L23 40.25L19.5 37.75ZM43 81.25H57L58.5 87.25L55.5 91.75H43L40 87.25L43 81.25Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<line x1="8" y1="38.25" x2="86" y2="38.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="44.25" x2="86" y2="44.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="56.25" x2="86" y2="56.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="50.25" x2="86" y2="50.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="62.25" x2="86" y2="62.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="68.25" x2="86" y2="68.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="74.25" x2="86" y2="74.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="80.25" x2="86" y2="80.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+<line x1="8" y1="86.25" x2="86" y2="86.25" stroke="#3661F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1 5"/>
+</g>
+</svg>
