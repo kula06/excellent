@@ -21,12 +21,16 @@ $(function() {
          nav: true,
          dots: true,
          margin: 22,
+         touchDrag: true,
+         mouseDrag: true,
        },
        900: {
          items: 2,
          nav: true,
          dots: true,
          margin: 22,
+         touchDrag: true,
+         mouseDrag: true,
        },
        1200: {
          items: 2,
@@ -127,22 +131,23 @@ $(function() {
 
   // scroll
   $(window).resize(function() {
-    $('.countries__list').mCustomScrollbar('destroy');
+    $('.countries__list, .program__info .info__list').mCustomScrollbar('destroy');
 
-    if ($(this).width() >= 1200)
+    if ($(this).width() >= 1200) {
       $('.countries__list').mCustomScrollbar({
         scrollButtons: {
           enable: false
         }
       });
+
+      $('.program__info .info__list').mCustomScrollbar({
+        scrollButtons: {
+          enable: true
+        }
+      });
+    }
   })
 
-
-  $('.program__info .info__list').mCustomScrollbar({
-    scrollButtons: {
-      enable: true
-    }
-  });
 
   $('.table__rows.rows--scroll').mCustomScrollbar({
     scrollButtons: {
