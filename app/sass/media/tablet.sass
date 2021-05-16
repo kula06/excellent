@@ -550,6 +550,8 @@
   padding-top: 10px
   ul
     li
+      &:last-child
+        display: none
       a
         font-size: 10px
 
@@ -570,6 +572,13 @@
         img
           height: 242px
           border-radius: 10px 20px 4px 4px
+        .owl-nav
+          button.owl-prev
+            left: -10px
+          button.owl-next
+            right: -10px
+          button.owl-next, button.owl-prev
+            top: 98px
       &__thumbnails
         img
           height: 69px
