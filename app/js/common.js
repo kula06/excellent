@@ -15,6 +15,8 @@ $(function() {
          nav: true,
          dots: true,
          margin: 9,
+         touchDrag: true,
+         mouseDrag: true,
        },
        600: {
          items: 2,
@@ -50,7 +52,7 @@ $(function() {
     responsive: {
       300: {
         items: 1,
-        nav: false,
+        nav: true,
         dots: true,
         margin: 9,
       },
