@@ -270,8 +270,10 @@
         margin: 15px 0 0
         font-size: 14px
 
-    .owl-item.active~.owl-item:not(.active)
+    .owl-item
       opacity: 1
+    .owl-item.active~.owl-item:not(.active)
+      opacity: .3
 
 
 .owl-carousel
@@ -565,12 +567,59 @@
       &__main-slider
         img
           height: 242px
+          border-radius: 10px 20px 4px 4px
       &__thumbnails
         img
           height: 69px
+          border-radius: 4px
 
 .details
   $c: &
+
+  &__icon-link
+    margin-left: 10px
+    font-size: 13px
+
+  &__list
+    &--line-price
+      margin-top: -9px
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      margin-left: -10px
+      margin-right: -25px
+      #{$c}
+        &__list
+          margin-top: 0
+        &__list-name
+          margin-top: 10px
+          margin-bottom: -4px
+          width: 100%
+          font-size: 15px
+          margin-left: 10px
+        &__list-item
+          width: 108px
+          margin: 8px 0 0 10px
+          display: flex
+          flex-direction: column
+          &:before
+            display: none
+          .name
+            font-size: 12px
+          .value
+            margin-top: 5px
+            padding: 0
+            flex-direction: column
+            .price
+              margin: 0
+              font-size: 15px
+              line-height: 140%
+            .old-price
+              margin: 5px 0 0
+              position: static
+
+
+
   &__list-item
     margin-top: 10px
     &:before
@@ -617,6 +666,7 @@
         border: 0
         width: auto
         margin: 0 30px 0 0px
+        height: auto
         svg
           margin-right: 11px
         .label
@@ -625,6 +675,7 @@
           font-size: 15px
           line-height: 140%
           color: #33302D
+
 
 
 .about-school
@@ -691,6 +742,8 @@
     p
       margin-top: 10px
       font-size: 15px
+  &__photo-collage
+    display: none
 
   &--with-list
     #{$c}
@@ -728,6 +781,7 @@
     margin-left: 62px
     width: 100%
     break-inside: avoid-column
+    min-height: 25px
 
     &:before
       width: 25px
@@ -905,10 +959,110 @@
           align-items: center
 
 
+.hostel
+  .container
+    padding: 50px 0
 
 
 
+  &__text
+    width: 345px
+    h2
+      font-size: 26px
+      br
+        display: none
+    p
+      font-size: 15px
+      &:not(:first-child)
+        margin-top: 10px
 
+.education-programs
+  .container
+    padding: 50px 0
+  h2
+    font-size: 26px
+    br
+      display: none
+  .line-tabs
+    margin-top: 10px
+    &__tab
+      margin-top: 10px
+  &__program
+    .program
+      &__photo
+        display: none
+      &__info
+        width: 100%
+        margin-left: 0
+        box-shadow: none
+        padding: 0
+        h4
+          font-size: 20px
+        .info
+          &__list
+            max-height: inherit
+            margin-left: -27px
+            display: block
+            column-count: 2
+          &__item
+            font-size: 15px
+            margin-left: 27px
+            width: calc(50% - 27px)
+            width: 100%
+            margin: 0 0 10px 27px
+            break-inside: avoid-column
+            &:before
+              font-size: 15px
+          &__break
+
+
+.requirement
+  .container
+    padding: 50px 0 58px
+  h2
+    font-size: 26px
+  .line-tabs
+    margin-top: 10px
+
+  &__items
+    margin-top: 10px
+    margin-left: -28px
+    flex-wrap: wrap
+
+  &__item
+    margin-top: 20px
+    margin-left: 28px
+    width: calc(50% - 28px)
+    display: flex
+
+    .icon
+      width: 109px
+      min-width: 109px
+      height: 109px
+      margin-right: 35px
+      img
+        width: 75px
+        height: 75px
+      &:before
+        right: -24px
+        top: -2px
+    .text
+      margin: 0
+      padding-top: 27px
+
+
+.programs-variation
+  .container
+    padding: 50px 0
+
+.salary
+  .container
+    padding: 50px 0
+  &__text
+    width: 345px
+    margin-left: 0
+  &__img 
+    display: none
 
 
 

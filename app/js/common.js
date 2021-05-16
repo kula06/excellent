@@ -128,6 +128,14 @@ $(function() {
     }
   });
   */
+/*
+  $('.education-programs__program .program__info').each(function() {
+    var $items = $(this).find('.info__item');
+    if ($items.length) {
+      var breakIndex = Math.floor($items.length * .62);
+      $('<div class="info__break">').insertAfter( $items.eq(breakIndex) );
+    }
+  });*/
 
   // scroll
   $(window).resize(function() {
