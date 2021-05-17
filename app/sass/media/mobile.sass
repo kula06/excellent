@@ -233,10 +233,48 @@
 
 
 .freeorder
+  border-bottom: 1px solid #E2E3E8
   &__form
     padding: 44px 0 60px
     form
       margin-top: 20px
+      input
+        border-radius: 10px
+        width: 100%
+      .btn
+        order: 99
+        margin: 30px 0 0
+        width: 100%
+      .row-inputs
+        margin: -10px 0 0
+        display: block
+        input
+          margin: 10px 0 0
+          width: 100%
+    .form-terms
+      margin-top: 10px
+      color: #88A0F4
+  &__expert
+    flex-wrap: wrap
+    .expert
+      &__quote
+        width: 100%
+        margin: 0 0 23px
+        padding-top: 32px
+        position: relative
+        top: 0
+        left: 0
+        &:before
+          display: block
+          width: 18px
+          height: 14px
+          top: 100%
+          left: 115px
+          background-image: url(../img/quote-mark-top-mobile.svg)
+
+      &__text
+        .name
+          max-width: 150px
 
 .hide-on-table-device
   display: block
@@ -392,6 +430,9 @@
 
 
 
+.program-table
+  .container
+    
 
 
 

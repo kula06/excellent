@@ -7,10 +7,13 @@
   display: none
 
 .header
+  padding-top: 6px
   &__logo
     order: -1
     width: 120px
     margin-right: 68px
+
+    margin-top: 14px
   &__city
     width: 124px
     margin-right: 50px
@@ -37,7 +40,13 @@
       cursor: pointer
   &__search-form
     width: 19px
+    display: block
     //margin-right: 39px
+    .search-form
+      &__input
+        display: none
+      &__search
+        left: 0
   &__phone
     font-size: 14px
     line-height: 130%
@@ -443,18 +452,45 @@
     p
       font-size: 15px
       line-height: 140%
+    form
+      .row-inputs
+        max-width: 100%
+        input
+          border-radius: 10px
+      .row-text
+        max-width: 100%
+        textarea
+          border-radius: 10px
+      .row-btn
+        width: 100%
+        max-width: 345px
 
   &__expert
     padding: 50px 0 60px
-    padding-left: 370px
     flex-direction: row
     .expert
       &__picture
         width: 99px
         height: 99px
         min-width: 99px
+        margin-right: 20px
       &__quote
-        top: 0
+        position: static
+        margin-right: 42px
+        width: 345px
+        padding: 34px 23px 31px
+        font-size: 14px
+        line-height: 120%
+        &:before
+          display: none
+      &__text
+        margin-top: 0
+        display: block
+        .name
+          margin-top: 0
+          text-align: left
+        .position
+          text-align: left
 
 
 .subscribe-form
