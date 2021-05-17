@@ -115,15 +115,24 @@ body
 	&__city
 		margin-right: auto
 		width: 213px
-		select
-			border: 0
-			font-size: 15px
-			line-height: 130%
-			color: #33302D
-			appearance: none
-			padding-right: 19px
-			font-weight: normal
-			background: url(../img/select-triangle.svg) no-repeat center right
+
+		border: 0
+		font-size: 15px
+		line-height: 130%
+		color: #33302D
+
+		padding-right: 19px
+		font-weight: normal
+
+		display: flex
+		align-items: center
+		&:after
+			content: ''
+			display: block
+			width: 9px
+			height: 6px
+			margin-left: 10px
+			background: url(../img/select-triangle.svg) no-repeat center right / contain
 
 	&__search-form
 		width: 400px
