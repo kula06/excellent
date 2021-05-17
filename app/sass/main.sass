@@ -76,6 +76,18 @@ body
 			height: 18px
 			margin-right: 19px
 			background: url(../img/send-icon.svg) no-repeat center / contain
+	&--white
+		background: #fff
+		height: 56px
+		display: flex
+		align-items: center
+		justify-content: center
+		min-width: 170px
+		padding: 0 20px
+		font-weight: bold
+		font-size: 15px
+		color: #33302D
+		border-radius: 54px
 
 	&--simple
 		font-size: 12px
@@ -2843,19 +2855,168 @@ ol
 
 
 
+.cover-object
+	background: rgba(51, 48, 45, .5)
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	z-index: 15
+	&:before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		height: 100%
+	&.map-type
+		.object
+			border-radius: 10px 30px 10px 10px
+	.object
+		display: inline-block
+		vertical-align: middle
+		text-align: left
+		width: 770px
+		height: 520px
+		border-radius: 10px
+		filter: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.26))
+
+		&__close
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			border: 2px solid rgba(255,255,255,.2)
+			position: absolute
+			right: -40px
+			top: -40px
+			cursor: pointer
+			&:before, &:after
+				content: ''
+				display: block
+				height: 2px
+				width: 19px
+				background: #fff
+				border-radius: 50px
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				margin: auto
+			&:before
+				transform: rotate(-45deg)
+			&:after
+				transform: rotate(45deg)
+		&__frame
+			width: 100%
+			height: 100%
+			background: red
+			border-radius: inherit
+			overflow: hidden
 
 
+.__hidden
+	display: none !important
 
 
+.cover-form
+	background: rgba(51, 48, 45, .5)
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	z-index: 15
+	&:before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		height: 100%
+	.popup
+		display: inline-block
+		vertical-align: middle
+		border-radius: 10px 30px 10px 10px
+		background: #3661F7
+		position: relative
+		width: 430px
+		padding: 46px 80px 60px
 
 
+		&__close
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			border: 2px solid rgba(255,255,255,.2)
+			position: absolute
+			right: -40px
+			top: -40px
+			cursor: pointer
+			&:before, &:after
+				content: ''
+				display: block
+				height: 2px
+				width: 19px
+				background: #fff
+				border-radius: 50px
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				margin: auto
+			&:before
+				transform: rotate(-45deg)
+			&:after
+				transform: rotate(45deg)
+		&__title
+			font-size: 32px
+			line-height: 120%
+			color: #fff
+			margin-top: 24px
+		&__text
+			margin-top: 15px
+			font-weight: 300
+			font-size: 17px
+			line-height: 140%
+			color: #fff
+		.btn
+			margin: 30px auto 0
 
+		&--select
+			background: #fff
+			padding: 56px 64px 60px
+			border-radius: 10px 30px 10px 10px
+			text-align: left
+			width: 498px
+			.popup
+				&__title
+					font-size: 24px
+					color: #33302D
+					line-height: 120%
+					font-weight: 600
+			.select
+				&__list
+					margin-top: 10px
+					//column-count: 2
+					margin-left: -69px
+					display: flex
+					align-items: flex-start
+					flex-wrap: wrap
+				&__item
+					margin-top: 10px
+					//break-inside: avoid
+					cursor: pointer
+					margin-left: 69px
+					width: calc(50% - 69px)
 
-
-
-
-
-
+					font-size: 14px
+					line-height: 140%
+					&--selected
+						color: #F87E1B
+						font-weight: bold
+					&:hover
+						color: #3661F7
 
 
 
