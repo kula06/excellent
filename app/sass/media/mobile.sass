@@ -329,6 +329,9 @@
     padding-bottom: 78px
 
     position: relative
+  &__title
+    br
+      display: none
   &__details
     box-shadow: none
     padding: 0
@@ -359,6 +362,7 @@
 
   &__text
     margin-top: 5px
+
   &__poster
     margin-top: 20px
   &__photo-collage
@@ -408,6 +412,14 @@
       left: 179px
       width: 63px
       height: 63px
+  &--with-list
+    .about-program__text
+      ul
+        &.triple
+          margin-left: -60px
+          li
+            margin-left: 60px
+            width: calc(50% - 60px)
 
 
 
@@ -439,6 +451,12 @@
       width: 100%
       margin: 30px 0 0
 
+.hostel
+  .container
+    padding: 40px 0 60px
+
+  .program-info__photos
+    margin-top: 34px
 
 .ielts
   .container
@@ -487,6 +505,10 @@
     font-weight: 600
     font-size: 20px
     line-height: 120%
+  &__text
+    a
+      border: 0
+      padding-bottom: 0
   &__table
     .table
       &__header
@@ -500,15 +522,19 @@
           .col
             font-size: 13px
             margin-top: 5px
-            width: 120px
-            min-width: 120px
+            width: 115px
+            min-width: 115px
             align-items: center
             display: flex
+            margin-right: 0
             &:first-child
               width: 100%
               padding: 0
             &--empty
               opacity: .3
+              &, &.standart, &.premium
+                svg
+                  color: #BFB6D1
             svg
               margin-right: 6px
               width: 17px
@@ -519,6 +545,7 @@
                 font-weight: 600
                 font-size: 10px
                 line-height: 120%
+                text-transform: uppercase
       &__footer
         padding: 0
         box-shadow: none
@@ -536,20 +563,61 @@
                 margin-top: 24px
 
 
+.info-line
+  font-size: 13px
+  font-weight: bold
 
 
+.education-programs
+  .container
+    padding: 50px 0
+  &__program
+    .program
+      &__info
+        .info
+          &__list
+            column-count: inherit
+            margin-left: 0
+            margin-top: 15px
+          &__item
+            width: 100%
+            margin-left: 0
+
+.line-tabs
+  margin-top: 10px
+  &__tab
+    margin-top: 10px
+
+.requirement
+  .container
+    padding: 50px 0
+  &__items
+    display: block
+    margin: 10px 0 0
+  &__item
+    margin: 10px 0 0
+    width: 100%
+    .icon
+      img
+        width: 75px
+        height: 75px
 
 
+.programs-variation
+  h2
+    font-size: 26px
 
 
+.salary
+  &__img
+    display: none
 
-
-
-
-
-
-
-
+.advanced-payments
+  .container
+    display: block
+  &__poster
+    width: 100%
+    margin-top: 30px
 
 
 

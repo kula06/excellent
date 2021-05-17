@@ -757,6 +757,9 @@
       font-size: 20px
       padding-bottom: 8px
     .awards
+      &__list
+        .advanced-link
+          margin-left: 50px
       &__item
         margin-top: 10px
         padding-left: 50px
@@ -767,7 +770,7 @@
         strong, b
           font-weight: inherit
     .advanced-link
-      margin: 20px 0 0 50px
+      margin: 20px 0 0 30px
 
 
 .about-program
@@ -806,6 +809,10 @@
             &.more-item
               margin-top: 20px
 
+  &--space
+    #{$c}
+      &__text
+        width: 345px
 
 
 .program-includes
@@ -990,6 +997,8 @@
           text-transform: uppercase
           font-weight: 600
       &__rows
+        &.rows--scroll
+          max-height: inherit
         .row
           align-items: flex-start
           .strong
@@ -1107,17 +1116,34 @@
     padding: 50px 0
   &__text
     width: 345px
-    margin-left: 0
+    margin-left: auto
+    h2
+      font-size: 26px
+    p
+      font-size: 15px
+      margin-top: 15px
   &__img
-    display: none
+    width: 449px
+    height: 506px
+    left: -50px
+    bottom: -150px
 
 
 
 
+ol
+  li
+    font-size: 15px
 
 
-
-
+.advanced-payments
+  .container
+    padding: 50px 0
+  &__text
+    h2
+      font-size: 26px
+  &__item
+    margin-top: 15px
 
 
 
