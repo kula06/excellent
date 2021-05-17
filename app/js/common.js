@@ -139,6 +139,15 @@ $(function() {
     }
   });*/
 
+  $('.program-table__table').each(function() {
+    var $header = $(this).find('.table__header');
+    $header.find('.col').each(function() {
+      var $rows = $header.next('.table__rows');
+
+      $rows.find('.col:nth-child('+($(this).index()+1)+')').attr('data-label', $(this).text().trim());
+    });
+  });
+
   // scroll
   $(window).resize(function() {
     $('.countries__list, .program__info .info__list').mCustomScrollbar('destroy');
