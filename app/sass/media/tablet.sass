@@ -793,7 +793,53 @@
       margin-top: 10px
       font-size: 15px
   &__photo-collage
-    display: none
+    //display: none
+    margin-right: 40px
+    margin-top: 70px
+    .photo
+      &:nth-child(1)
+        width: 280px
+        height: 280px
+        border-radius: 70px
+      &:nth-child(2)
+        width: 70px
+        height: 70px
+        top: -42px
+        left: 19px
+        border-width: 7px
+        border-radius: 17px
+      &:nth-child(3)
+        width: 140px
+        height: 140px
+        border-width: 7px
+        border-radius: 35px
+        top: 50px
+        left: -104px
+      &:nth-child(4)
+        display: none
+      &:nth-child(5)
+        width: 70px
+        height: 70px
+        top: 251px
+        left: 70px
+        border-width: 7px
+        border-radius: 17px
+      &:nth-child(6)
+        width: 140px
+        height: 140px
+        border-width: 7px
+        border-radius: 35px
+        top: 190px
+        left: 120px
+    .emoji
+      width: 77px
+      height: 77px
+      left: 220px
+      top: -26px
+
+  &--vcenter
+    .container
+      align-items: flex-start
 
   &--with-list
     #{$c}
@@ -813,6 +859,19 @@
     #{$c}
       &__text
         width: 345px
+
+  &--tabs
+    #{$c}
+      &__poster
+        width: 292px
+        height: 300px
+        margin: 55px 0 0
+      &__text
+        width: 395px
+        .line-tabs
+          margin-right: -30px
+          &__tab
+            font-size: 12px
 
 
 .program-includes
@@ -1071,6 +1130,57 @@
               font-size: 15px
           &__break
 
+.vacancies
+  .container
+    padding: 48px 0 45px
+  h2
+    font-size: 26px
+    padding-bottom: 0
+  .btn
+    margin-top: 30px
+  &__collage
+    margin-right: 102px
+    margin-top: 26px
+    .photo
+      &:nth-child(1)
+        width: 191px
+        height: 191px
+        border-radius: 37px
+      &:nth-child(2)
+        width: 95px
+        height: 95px
+        border-radius: 18px
+        border-width: 3px
+        top: 13px
+        left: -69px
+      &:nth-child(3)
+        width: 48px
+        height: 48px
+        border-radius: 9px
+        border-width: 3px
+        left: calc(100% + 35px)
+        top: -3px
+      &:nth-child(4)
+        width: 96px
+        height: 96px
+        border-radius: 18px
+        border-width: 3px
+        top: 28px
+        left: 164px
+      &:nth-child(5)
+        width: 96px
+        height: 96px
+        border-radius: 18px
+        border-width: 3px
+        top: 106px
+        left: 109px
+      &:nth-child(6)
+        width: 47px
+        height: 47px
+        top: 164px
+        left: 77px
+        border-radius: 9px
+        border-width: 3px
 
 .requirement
   .container
@@ -1123,10 +1233,11 @@
       font-size: 15px
       margin-top: 15px
   &__img
-    width: 449px
-    height: 506px
-    left: -50px
-    bottom: -150px
+    width: 790px
+    height: 790px
+    left: -248px
+    bottom: -262px
+    background-image: url(../img/salary-tablet.jpg)
 
 
 

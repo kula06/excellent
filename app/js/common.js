@@ -94,7 +94,10 @@ $(function() {
     items: 3,
     margin: 45,
     nav: true,
-    dots: false
+    dots: false,
+    touchDrag: false,
+    mouseDrag: false,
+    loop: true
   });
 /*
   $('.awards-block__items').owlCarousel({

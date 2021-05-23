@@ -97,6 +97,19 @@ body
 		border: 1px solid #E4E9EA
 		border-radius: 4px
 
+	&--orange-line
+		display: flex
+		align-items: center
+		justify-content: center
+		border: 2px solid #F87E1B
+		border-radius: 54px
+
+		font-size: 15px
+		color: #F87E1B
+		font-weight: bold
+		height: 54px
+		min-width: 340px
+
 .header
 	padding: 20px 0 12px
 	background: #fff
@@ -1781,12 +1794,14 @@ body
 
 
 .universities
+	&--gray
+		background: #F4F6FB
 	.container
 		padding: 100px 0
 		display: flex
 		flex-wrap: wrap
 
-		align-items: baseline
+		align-items: flex-end
 		justify-content: space-between
 
 	h2
@@ -1795,7 +1810,13 @@ body
 		line-height: 110%
 	.btn
 		margin: 49px auto 0
-
+	&__text
+		max-width: 785px
+		p
+			margin-top: 10px
+			font-weight: 300
+			font-size: 17px
+			line-height: 140%
 	&__count
 		font-weight: 300
 		font-size: 17px
@@ -1803,6 +1824,11 @@ body
 		color: #3661F7
 	&__slider
 		margin-top: 28px
+		.owl-stage-outer
+			overflow: visible
+		.owl-item
+			&:not(.active)
+				opacity: 0
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
@@ -1812,6 +1838,21 @@ body
 				&.owl-next
 					right: -76px
 	.university
+		position: relative
+		&:hover
+			&:before
+				content: ''
+				display: block
+				position: absolute
+
+				top: -15px
+				left: -15px
+				right: -15px
+				bottom: -15px
+				background: #fff
+				box-shadow: 0px 4px 4px rgba(46, 50, 81, 0.04), 0px 4px 56px rgba(46, 50, 81, 0.08)
+				border-radius: 10px
+				z-index: -1
 		&__poster
 			height: 189px
 			border-radius: 10px
@@ -1943,7 +1984,32 @@ body
 					left: 0
 				b, strong
 					font-weight: 700
-
+			&__icon-links
+				margin-top: 5px
+			&__icon-link
+				margin-top: 20px
+				display: flex
+				align-items: center
+				text-decoration: none
+				.icon
+					width: 38px
+					min-width: 38px
+					height: 38px
+					background: #3661F7
+					border-radius: 50%
+					display: flex
+					align-items: center
+					justify-content: center
+					margin-right: 22px
+					img
+						max-width: 24px
+						max-height: 24px
+				.text
+					font-weight: 300
+					font-size: 17px
+					line-height: 140%
+					color: #3661F7
+					border-bottom: 1px solid rgba(54, 97, 247, .3)
 
 ol
 	margin-top: 15px
@@ -2067,6 +2133,11 @@ ol
 			border-radius: inherit
 	&__text
 		width: 452px
+		&--less
+			width: 543px
+		.btn
+			margin-top: 30px
+			min-width: 340px
 
 		h2
 			padding-bottom: 5px
@@ -2074,7 +2145,17 @@ ol
 			font-size: 38px
 			line-height: 110%
 			color: #33302D
+		h4
+			font-weight: 600
+			font-size: 24px
+			line-height: 120%
+			max-width: 420px
+			//padding-bottom: 5px
 
+		ol
+			margin-top: 30px
+		.advanced-link
+			margin-left: 30px
 		p
 			margin-top: 20px
 			font-weight: 300
@@ -2212,6 +2293,8 @@ ol
 			margin-right: 0
 		#{$c}__text
 			width: 570px
+			&--less
+				width: 543px
 	&--vcenter
 		.container
 			align-items: center
@@ -2225,6 +2308,100 @@ ol
 
 .w100p
 	width: 100%
+
+.graduate
+	.container
+		padding: 95px 0 97px
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__text
+		width: 540px
+		h2
+			font-weight: 600
+			font-size: 34px
+			line-height: 110%
+		p
+			margin-top: 10px
+			font-weight: 300
+			font-size: 17px
+			line-height: 140%
+	&__list
+		margin-left: -30px
+		margin-top: -30px
+		display: flex
+		flex-wrap: wrap
+		width: calc((269px * 2) + (30px * 2))
+	&__item
+		width: 269px
+		height: 100px
+		margin: 30px 0 0 30px
+		background: #fff
+		box-shadow: 0px 4px 4px rgba(46, 50, 81, 0.04), 0px 4px 56px rgba(46, 50, 81, 0.08)
+		border-radius: 10px
+		padding: 15px 19px 18px 42px
+
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			max-width: 100%
+			max-height: 100%
+
+.visas
+	.container
+		padding: 120px 0 100px
+	.btn
+		margin: 50px auto 0
+	&__text
+		max-width: 725px
+		h2
+			font-weight: 600
+			font-size: 34px
+			line-height: 110%
+		p
+			margin-top: 10px
+			font-weight: 300
+			font-size: 17px
+			line-height: 140%
+			strong, b
+				color: #3661F7
+				font-weight: 700
+	&__items
+		display: flex
+		flex-wrap: wrap
+		margin-left: -30px
+	&__item
+		display: flex
+		align-items: flex-start
+		margin: 40px 0 0 30px
+		width: calc(50% - 30px)
+		.poster
+			width: 160px
+			min-width: 160px
+			height: 160px
+			border-radius: 50%
+			margin-right: 40px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: inherit
+		.text
+			h5, .title
+				font-weight: bold
+				font-size: 18px
+				line-height: 120%
+			p
+				margin-top: 5px
+				font-size: 18px
+				line-height: 120%
+				b, strong
+					color: #3661F7
+					font-weight: 700
+
+
+
 
 .hostel
 	background: #FDF8F3
@@ -2923,6 +3100,35 @@ ol
 			border-radius: inherit
 			overflow: hidden
 
+.program-banner
+	background: no-repeat center / cover
+	.breadcrumbs
+		ul
+			li
+				&:before
+					color: #fff
+				a
+					color: #fff
+				span
+					color: rgba(255, 255, 255, 0.7)
+	.container
+		min-height: 534px
+	&__content
+		padding: 120px 0
+		color: #fff
+		max-width: 594px
+		h1
+			font-size: 38px
+			font-weight: 600
+			line-height: 110%
+		p
+			margin-top: 15px
+			font-weight: 300
+			font-size: 17px
+			line-height: 140%
+		.btn
+			margin-top: 36px
+			min-width: 340px
 
 .__hidden
 	display: none !important
@@ -2937,6 +3143,7 @@ ol
 	height: 100%
 	text-align: center
 	z-index: 15
+	display: none
 	&:before
 		content: ''
 		display: inline-block
