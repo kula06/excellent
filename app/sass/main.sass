@@ -674,7 +674,7 @@ body
 		background: url(../img/salary.jpg) no-repeat center / contain
 		position: absolute
 		bottom: -337px
-		left: -248px
+		left: -130px
 	&__text
 		width: 452px
 		margin-left: 600px
@@ -778,6 +778,21 @@ body
 	&--down
 		&:after
 			transform: rotate(90deg)
+		&.toggled
+			color: #F81B1B
+			&:after
+				transform: rotate(-90deg)
+
+	&.toggled
+		&:after
+			background-image: url(../img/more-arrow-red.svg)
+
+	&--orange
+		&.toggled
+			color: #F87E1B
+			&:after
+				background-image: url(../img/more-arrow-orange.svg)
+
 
 .reviews
 	.container
@@ -2014,6 +2029,16 @@ body
 ol
 	margin-top: 15px
 	counter-reset: olli
+	&.hidden-list
+		&:not(.view-all)
+			li
+				&:nth-child(n+7)
+					display: none
+	&.hidden-list-10
+		&:not(.view-all)
+			li
+				&:nth-child(n+11)
+					display: none
 	li
 		margin-top: 10px
 		position: relative
@@ -2053,7 +2078,7 @@ ol
 			margin-left: 30px
 	&__collage
 		position: relative
-		margin-top: -33px
+		//margin-top: -33px
 		margin-right: 187px
 		.photo
 
@@ -2156,6 +2181,8 @@ ol
 			margin-top: 30px
 		.advanced-link
 			margin-left: 30px
+			&.ml-0
+				margin-left: 0
 		p
 			margin-top: 20px
 			font-weight: 300
@@ -2168,6 +2195,12 @@ ol
 			&__title
 				font-size: 18px
 				line-height: 120%
+
+		.hidden-list
+			&:not(.view-all)
+				li
+					&:nth-child(n+10)
+						display: none
 
 	&__photo-collage
 		position: relative
@@ -2243,6 +2276,10 @@ ol
 					max-width: 597px
 					display: flex
 					flex-wrap: wrap
+					&:not(.view-all)
+						li
+							&:nth-child(n+28)
+								display: none
 					li
 						margin-left: 46px
 						width: calc(100% / 3 - 46px)
@@ -2456,6 +2493,12 @@ ol
 		display: flex
 		flex-wrap: wrap
 		align-items: flex-start
+
+		&:not(.view-all)
+			.program-includes__item
+				&:nth-child(n+10)
+					display: none
+
 	&__item
 		margin-top: 40px
 		margin-left: 30px
@@ -3233,6 +3276,49 @@ ol
 						font-weight: bold
 					&:hover
 						color: #3661F7
+		&--awards
+			width: 570px
+			background: #fff
+			border-radius: 10px 30px 10px 10px
+			//height: 570px
+			//max-height: 100%
+			text-align: left
+			padding: 56px 30px 54px 100px
+			.popup__close
+				top: 20px
+				right: 20px
+				border: 2px solid rgba(170, 170, 183, .3)
+				&:after, &:before
+					background: rgba(170, 170, 183, .3)
+			.awards
+				&__title
+					font-weight: 600
+					font-size: 24px
+					line-height: 120%
+					span
+						color: #F87E1B
+				&__list
+					margin-top: -4px
+					max-height: 388px
+					margin-left: -61px
+
+				&__item
+					position: relative
+					margin-top: 20px
+					font-weight: 300
+					font-size: 17px
+					line-height: 140%
+					padding-left: 61px
+					padding-right: 25px
+					&:before
+						content: ''
+						display: block
+						width: 47px
+						height: 47px
+						position: absolute
+						top: 0
+						left: 0
+						background: url(../img/awards__star.png) no-repeat center / 25px 32px
 
 
 

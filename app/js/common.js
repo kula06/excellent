@@ -142,6 +142,17 @@ $(function() {
     }
   });*/
 
+  $(document).on('click', '[data-toggle-target]', function(e) {
+    e.preventDefault();
+
+    $( $(this).attr('data-toggle-target') ).toggleClass('view-all');
+
+    var currentText = $(this).text();
+    $(this).text( $(this).attr('data-toggle-text') );
+    $(this).attr('data-toggle-text', currentText);
+    $(this).toggleClass('toggled');
+  });
+
   $('.program-table__table').each(function() {
     var $header = $(this).find('.table__header');
     $header.find('.col').each(function() {
@@ -172,6 +183,12 @@ $(function() {
 
 
   $('.table__rows.rows--scroll').mCustomScrollbar({
+    scrollButtons: {
+      enable: false
+    }
+  });
+
+  $('.popup .awards__list').mCustomScrollbar({
     scrollButtons: {
       enable: false
     }
