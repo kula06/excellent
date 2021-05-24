@@ -97,7 +97,39 @@ $(function() {
     dots: false,
     touchDrag: false,
     mouseDrag: false,
-    loop: true
+    loop: true,
+    responsive: {
+      300: {
+        items: 1,
+        nav: true,
+        dots: true,
+        margin: 9,
+        touchDrag: true,
+        mouseDrag: true
+      },
+      600: {
+        items: 2,
+        nav: false,
+        dots: true,
+        margin: 22,
+        touchDrag: true,
+        mouseDrag: true
+      },
+      900: {
+        items: 2,
+        nav: false,
+        dots: true,
+        margin: 22,
+        touchDrag: true,
+        mouseDrag: true
+      },
+      1200: {
+        items: 3,
+        nav: true,
+        dots: false,
+        margin: 45,
+      }
+    }
   });
 /*
   $('.awards-block__items').owlCarousel({

@@ -278,6 +278,8 @@
 
 .hide-on-table-device
   display: block
+.hide-on-mobile-device
+  display: none
 
 .simple-text-image
   .container
@@ -353,7 +355,39 @@
   &__awards
     margin-top: 40px
     width: 100%
+    .advanced-link
+      margin-left: 50px
+    ol
+      & + .advanced-link
+        margin-left: 30px
 
+.vacancies
+  .container
+    flex-wrap: wrap
+  &__collage
+    margin-right: 0
+    margin-left: 69px
+
+.salary-info
+  .container
+    padding: 50px 0
+  h2
+    font-size: 26px
+  p
+    margin-top: 15px
+    font-size: 15px
+
+.universities
+  &__slider
+    max-width: 286px
+    .owl-dots
+      width: calc(100vw - 30px)
+  &__count
+    order: 5
+    margin-top: 34px
+    width: 100%
+    text-align: center
+    display: none
 
 .about-program
   .container
@@ -420,7 +454,13 @@
           li
             margin-left: 60px
             width: calc(50% - 60px)
-
+  &--tabs
+    .about-program
+      &__text
+        width: 100%
+        .line-tabs
+          &__tab
+            margin-left: 5px
 
 
 .program-includes
@@ -450,6 +490,8 @@
     .advanced__item
       width: 100%
       margin: 30px 0 0
+  &__poster
+    margin-top: 20px
 
 .hostel
   .container
