@@ -215,7 +215,7 @@
 				<a href="#" class="advanced-link advanced-link--down">Читать далее</a>
 
 				<div class="info__links">
-					<a href="#" class="info__link">
+					<a href="#video" class="info__link openPopup">
 						<span class="icon">
 							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M22.3448 0.852051H2.48276C1.11393 0.852051 0 1.96598 0 3.33481V19.8865C0 20.3434 0.370759 20.7141 0.827586 20.7141H9.22097C9.15228 20.4485 9.10345 20.1737 9.10345 19.8865C9.10345 18.0609 10.5881 16.5762 12.4138 16.5762C14.2394 16.5762 15.7241 18.0609 15.7241 19.8865C15.7241 20.1737 15.6753 20.4485 15.6066 20.7141H24C24.4568 20.7141 24.8276 20.3434 24.8276 19.8865V3.33481C24.8276 1.96598 23.7137 0.852051 22.3448 0.852051ZM17.7492 10.6962L9.47338 14.8341C9.35669 14.8921 9.23007 14.921 9.10345 14.921C8.952 14.921 8.80138 14.8796 8.66814 14.7977C8.42483 14.6463 8.27586 14.3806 8.27586 14.0934V5.81757C8.27586 5.5304 8.42483 5.26474 8.66814 5.11329C8.91228 4.96184 9.21766 4.94943 9.47338 5.07688L17.7492 9.21481C18.0298 9.3555 18.2069 9.64184 18.2069 9.9555C18.2069 10.2692 18.0298 10.5555 17.7492 10.6962Z" fill="currentColor"/>
@@ -223,7 +223,7 @@
 								<path d="M24 24.8519H0.827586C0.370759 24.8519 0 24.4812 0 24.0244C0 23.5675 0.370759 23.1968 0.827586 23.1968H24C24.4568 23.1968 24.8276 23.5675 24.8276 24.0244C24.8276 24.4812 24.4568 24.8519 24 24.8519Z" fill="currentColor"/>
 							</svg>
 						</span>Видео о школе</a>
-					<a href="#" class="info__link">
+					<a href="#map" class="info__link openPopup">
 						<span class="icon">
 							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M12.8778 13.4581C13.2126 13.1234 13.2126 12.5807 12.8778 12.246C12.5431 11.9112 12.0004 11.9112 11.6657 12.246C11.3309 12.5807 11.3309 13.1234 11.6657 13.4581C12.0004 13.7929 12.5431 13.7929 12.8778 13.4581Z" fill="currentColor"/>
@@ -244,7 +244,7 @@
 					<div class="awards__item"><b>№8</b> в списке лучших британских школ по результатам A-Level (The Telegraph, 2018)</div>
 					<div class="awards__item"><b>№12</b> в списке лучших британских школ по результатам A-Level (Best Schools, 2018)</div>
 
-					<a href="#" class="advanced-link">Открыть полный список (8)</a>
+					<a href="#awards_popup" class="advanced-link openPopup">Открыть полный список (8)</a>
 				</div>
 			</div>
 		</div>
@@ -1046,20 +1046,6 @@
 		</div>
 	</footer>
 
-	<div class="cover-object video-type __hidden">
-		<div class="object">
-			<div class="object__close"></div>
-			<div class="object__frame"></div>
-		</div>
-	</div>
-
-	<div class="cover-object map-type __hidden">
-		<div class="object">
-			<div class="object__close"></div>
-			<div class="object__frame"></div>
-		</div>
-	</div>
-
 	<div class="cover-form">
 		<div class="popup __hidden">
 			<div class="popup__close close"></div>
@@ -1102,7 +1088,7 @@
 			</div>
 		</div>
 
-		<div class="popup popup--awards __hidden">
+		<div class="popup popup--awards" id="awards_popup">
 			<div class="popup__close close"></div>
 
 			<div class="awards__title">Награды и рейтинги школы <span>«Avondale college»</span></div>
@@ -1125,6 +1111,20 @@
 				<div class="awards__item">№9 в списке лучших британских школ по результатам GCSE (Best Schools, 2018)</div>
 				<div class="awards__item">№8 в списке лучших британских школ по результатам A-Level (The Telegraph, 2018)</div>
 				<div class="awards__item">№12 в списке лучших британских школ по результатам A-Level (Best Schools, 2018)</div>
+			</div>
+		</div>
+
+		<div class="popup popup--object map-type" id="map">
+			<div class="popup__close close"></div>
+			<div class="popup__frame">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2645.4912283903127!2d129.74585026044969!3d62.040026337728584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5bf64a45761934b1%3A0xa664e27948708db2!2z0YHQutCy0LXRgCDQuNC8LiDQmtCw0YDQu9CwINCc0LDRgNC60YHQsCwg0K_QutGD0YLRgdC6LCDQoNC10YHQvy4g0KHQsNGF0LAgKNCv0LrRg9GC0LjRjyksINCg0L7RgdGB0LjRjywgNjc3MDAw!5e0!3m2!1sru!2sua!4v1621968728792!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+
+		<div class="popup popup--object video-type" id="video">
+			<div class="popup__close close"></div>
+			<div class="popup__frame">
+				<iframe src="http://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"></iframe>
 			</div>
 		</div>
 	</div>

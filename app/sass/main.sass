@@ -1764,6 +1764,7 @@ body
 				font-size: 12px
 
 				color: #636365
+				cursor: pointer
 				&.active
 					background: #3661F7
 					border-color: #3661F7
@@ -3082,67 +3083,6 @@ ol
 			padding-right: 10px
 
 
-
-
-.cover-object
-	background: rgba(51, 48, 45, .5)
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	text-align: center
-	z-index: 15
-	&:before
-		content: ''
-		display: inline-block
-		vertical-align: middle
-		height: 100%
-	&.map-type
-		.object
-			border-radius: 10px 30px 10px 10px
-	.object
-		display: inline-block
-		vertical-align: middle
-		text-align: left
-		width: 770px
-		height: 520px
-		border-radius: 10px
-		filter: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.26))
-
-		&__close
-			width: 40px
-			height: 40px
-			border-radius: 50%
-			border: 2px solid rgba(255,255,255,.2)
-			position: absolute
-			right: -40px
-			top: -40px
-			cursor: pointer
-			&:before, &:after
-				content: ''
-				display: block
-				height: 2px
-				width: 19px
-				background: #fff
-				border-radius: 50px
-				position: absolute
-				top: 0
-				bottom: 0
-				left: 0
-				right: 0
-				margin: auto
-			&:before
-				transform: rotate(-45deg)
-			&:after
-				transform: rotate(45deg)
-		&__frame
-			width: 100%
-			height: 100%
-			background: red
-			border-radius: inherit
-			overflow: hidden
-
 .program-banner
 	background: no-repeat center / cover
 	.breadcrumbs
@@ -3320,10 +3260,60 @@ ol
 						left: 0
 						background: url(../img/awards__star.png) no-repeat center / 25px 32px
 
+		&.map-type
+			border-radius: 10px 30px 10px 10px
+		&--object
+			display: inline-block
+			vertical-align: middle
+			text-align: left
+			width: 770px
+			height: 520px
+			border-radius: 10px
+			filter: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.26))
+			padding: 0
+			background: transparent
+			.popup
+				&__close
+					width: 40px
+					height: 40px
+					border-radius: 50%
+					border: 2px solid rgba(255,255,255,.2)
+					position: absolute
+					right: -40px
+					top: -40px
+					cursor: pointer
+					&:before, &:after
+						content: ''
+						display: block
+						height: 2px
+						width: 19px
+						background: #fff
+						border-radius: 50px
+						position: absolute
+						top: 0
+						bottom: 0
+						left: 0
+						right: 0
+						margin: auto
+					&:before
+						transform: rotate(-45deg)
+					&:after
+						transform: rotate(45deg)
+				&__frame
+					width: 100%
+					height: 100%
+					border-radius: inherit
+					overflow: hidden
+					iframe
+						width: 100%
+						height: 100%
 
 
-
-
+.tab_content
+	display: inherit
+	align-items: inherit
+	justify-content: inherit
+	flex-wrap: inherit
 
 
 
