@@ -280,6 +280,9 @@
   display: block
 .hide-on-mobile-device
   display: none
+.reviews
+  .hide-on-mobile-device
+    display: none
 
 .simple-text-image
   .container
@@ -382,6 +385,9 @@
     max-width: 286px
     .owl-dots
       width: calc(100vw - 30px)
+    .owl-item
+      &:not(.active)
+        opacity: .3
   &__count
     order: 5
     margin-top: 34px
@@ -396,6 +402,11 @@
 
   &__text
     margin-top: 5px
+    img
+      width: 100%
+      height: auto
+      margin: 15px 0 5px
+      border-radius: 10px
 
   &__poster
     margin-top: 20px
@@ -492,6 +503,12 @@
       margin: 30px 0 0
   &__poster
     margin-top: 20px
+  &__text
+    img
+      width: 100%
+      border-radius: 10px
+      margin: 20px 0 0
+      height: auto
 
 .hostel
   .container
@@ -510,16 +527,26 @@
     h2
       max-width: 293px
     .btn
-      margin-top: 333px
+      margin-top: 353px
 
   &__testframe
     height: 350px
     width: 345px
-    bottom: 84px
+    bottom: 104px
     top: auto
     left: 0
     right: 0
     margin: auto
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      height: 33px
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+      transform: rotate(-180deg)
+      bottom: 0
+      left: 0
+      width: 100%
 
 
 
@@ -661,7 +688,8 @@
     width: 100%
     margin-top: 30px
 
-
+.view-on-mobile-device
+	display: block
 
 
 
