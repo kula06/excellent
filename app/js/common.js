@@ -174,6 +174,99 @@ $(function() {
     }
   });*/
 
+  window.globalRedirect = '';
+
+window.openPopup = function(el) {
+  closePopups(false);
+  //closeMenu();
+  $('.cover-form').show();
+  $(el).show().css('display', 'inline-block');
+
+  $(window).resize();
+
+  $('html, body').css({
+    overflow: 'hidden'
+  });
+}
+
+window.closePopups = function(cover) {
+  if (cover == true) {
+    $('.cover-form').removeClass('view');
+    $('html, body').css({
+      overflow: ''
+    });
+
+    globalRedirect = '';
+
+    $('.cover-form').hide();
+    $('.cover-form .popup').hide()
+  } else {
+    $('.cover-form .popup').removeClass('view').hide();
+  }
+}
+
+$(document).on('click', '.openPopup-li', function (e) {
+  var $el = $(this).find('a');
+  if ($el.length) {
+    e.preventDefault();
+    openPopupByTarget($el.get(0));
+  }
+});
+
+function openPopupByTarget(target) {
+  if ($(target).is('[data-redirect]')) {
+    globalRedirect = $(target).data('redirect');
+  }
+
+  var target_selector = false;
+  if ($(target).is('[data-target]'))
+    target_selector = $(target).attr('data-target');
+  if ($(target).is('[href]'))
+    target_selector = $(target).attr('href');
+
+    if (target_selector) {
+      openPopup( target_selector );
+
+      if ($(target).is('[data-slide]')) {
+        $( target_selector ).find('.owl-carousel').trigger('to.owl.carousel', parseInt($(target).attr('data-slide')))
+      }
+
+      if ($(target).is('[data-tab]')) {
+        $( target_selector ).find('.tab').eq( $(target).attr('data-tab') ).click();
+      }
+    }
+
+}
+
+$(document).on('click', '.openPopup', function(e) {
+  e.preventDefault();
+  openPopupByTarget(this);
+});
+$(document).on('click', '.cover-form, .cover-form .close, .cover-form .close-all', function(e) {
+  if (e.target != this)
+    return;
+  closePopups(true);
+  return false;
+});
+
+$(document).on('click', '.close-all-popups', function() {
+  closePopups(true);
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+    closePopups(true);
+  }
+});
+
+  $('.tabs__tab').each(function() {
+    $(this).addClass('active').siblings().removeClass('active').each(function() {
+      $( $(this).attr('href') ).hide();
+    });
+
+    $( $(this).attr('href') ).show();
+  });
+
   $(document).on('click', '[data-toggle-target]', function(e) {
     e.preventDefault();
 
