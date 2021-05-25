@@ -22,7 +22,7 @@
 
 	<header class="header">
 		<div class="container header__container">
-			<div class="header__city">Владивосток</div>
+			<div class="header__city openPopup" data-target="#selectcity">Владивосток</div>
 
 			<form class="header__search-form" action="#">
 				<button type="submit" class="search-form__search"></button>
@@ -952,7 +952,7 @@
 			<button class="btn btn--white">OK!</button>
 		</div>
 
-		<div class="popup popup--select __hidden">
+		<div class="popup popup--select" id="selectcity">
 			<div class="popup__close close"></div>
 			<div class="popup__title">Выберите город</div>
 			<div class="select__list">

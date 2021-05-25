@@ -22,7 +22,7 @@
 
 	<header class="header">
 		<div class="container header__container">
-			<div class="header__city">Владивосток</div>
+			<div class="header__city openPopup" data-target="#selectcity">Владивосток</div>
 
 			<form class="header__search-form" action="#">
 				<button type="submit" class="search-form__search"></button>
@@ -193,7 +193,7 @@
 				<a href="#" class="advanced-link advanced-link--down">Подробнее</a>
 
 				<div class="info__links">
-					<a href="#" class="info__link">
+					<a href="#video" class="info__link openPopup">
 						<span class="icon">
 							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M22.3448 0.852051H2.48276C1.11393 0.852051 0 1.96598 0 3.33481V19.8865C0 20.3434 0.370759 20.7141 0.827586 20.7141H9.22097C9.15228 20.4485 9.10345 20.1737 9.10345 19.8865C9.10345 18.0609 10.5881 16.5762 12.4138 16.5762C14.2394 16.5762 15.7241 18.0609 15.7241 19.8865C15.7241 20.1737 15.6753 20.4485 15.6066 20.7141H24C24.4568 20.7141 24.8276 20.3434 24.8276 19.8865V3.33481C24.8276 1.96598 23.7137 0.852051 22.3448 0.852051ZM17.7492 10.6962L9.47338 14.8341C9.35669 14.8921 9.23007 14.921 9.10345 14.921C8.952 14.921 8.80138 14.8796 8.66814 14.7977C8.42483 14.6463 8.27586 14.3806 8.27586 14.0934V5.81757C8.27586 5.5304 8.42483 5.26474 8.66814 5.11329C8.91228 4.96184 9.21766 4.94943 9.47338 5.07688L17.7492 9.21481C18.0298 9.3555 18.2069 9.64184 18.2069 9.9555C18.2069 10.2692 18.0298 10.5555 17.7492 10.6962Z" fill="currentColor"/>
@@ -812,7 +812,7 @@
 			<button class="btn btn--white">OK!</button>
 		</div>
 
-		<div class="popup popup--select __hidden">
+		<div class="popup popup--select" id="selectcity">
 			<div class="popup__close close"></div>
 			<div class="popup__title">Выберите город</div>
 			<div class="select__list">
