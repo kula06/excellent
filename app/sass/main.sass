@@ -784,6 +784,7 @@ body
 				transform: rotate(-90deg)
 
 	&.toggled
+		color: #F81B1B
 		&:after
 			background-image: url(../img/more-arrow-red.svg)
 
@@ -2159,6 +2160,8 @@ ol
 			border-radius: inherit
 	&__text
 		width: 452px
+		display: flex
+		flex-direction: column
 		&--less
 			width: 543px
 		.btn
@@ -2179,7 +2182,7 @@ ol
 			//padding-bottom: 5px
 
 		ol
-			margin-top: 30px
+			margin-top: 20px
 		.advanced-link
 			margin-left: 30px
 			&.ml-0
@@ -2202,6 +2205,12 @@ ol
 				li
 					&:nth-child(n+10)
 						display: none
+		.hidden-link
+			order: 999
+		&:not(.view-all)
+			.hidden-link
+				& ~ *
+					display: none
 
 	&__photo-collage
 		position: relative
