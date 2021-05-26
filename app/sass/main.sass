@@ -1939,6 +1939,28 @@ body
 			line-height: 140%
 			color: #33302D
 		.info
+			&__icon-list
+			&__icon-item
+				margin-top: 10px
+				display: flex
+				align-items: flex-start
+				.icon
+					width: 38px
+					height: 38px
+					min-width: 38px
+					border-radius: 50%
+					background: #3661F7
+					display: flex
+					align-items: center
+					justify-content: center
+					margin: 5px 22px 0 0
+					img
+						max-width: 24px
+						max-height: 24px
+				.text
+					font-weight: 300
+					font-size: 17px
+					line-height: 140%
 			&__links
 				display: flex
 				align-items: flex-start
@@ -2396,6 +2418,8 @@ ol
 			max-height: 100%
 
 .visas
+	&--gray
+		background: #F4F6FB
 	.container
 		padding: 120px 0 100px
 	.btn
@@ -2447,6 +2471,87 @@ ol
 					color: #3661F7
 					font-weight: 700
 
+.salary-examples
+	.container
+		padding: 92px 0 100px
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__text
+		width: 670px
+		h2
+			font-weight: 600
+			font-size: 34px
+			line-height: 110%
+		.double
+			padding-top: 46px
+			margin-left: -40px
+			column-count: 2
+			li
+				margin: 0 0 20px 40px
+				break-inside: avoid-column
+				b
+					font-weight: bold
+					font-size: 16px
+					line-height: 120%
+				p
+					margin-top: 5px
+					font-size: 14px
+					line-height: 140%
+					color: #636365
+	&__collage
+		margin: 35px 50px 0 0
+		position: relative
+		.photo
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+			&:nth-child(1)
+				width: 321px
+				height: 321px
+				border-radius: 71px
+			&:nth-child(2)
+				width: 160px
+				height: 160px
+				border: 7px solid #FFFFFF
+				border-radius: 35px
+				position: absolute
+				top: 66px
+				left: -67px
+			&:nth-child(3)
+				width: 161px
+				height: 161px
+				border: 7px solid #FFFFFF
+				border-radius: 35px
+				position: absolute
+				top: -78px
+				left: 219px
+			&:nth-child(4)
+				width: 81px
+				height: 81px
+				border: 7px solid #FFFFFF
+				border-radius: 17px
+				position: absolute
+				top: 47px
+				left: 264px
+			&:nth-child(5)
+				width: 161px
+				height: 161px
+				border: 7px solid #FFFFFF
+				border-radius: 35px
+				position: absolute
+				top: 239px
+				left: 219px
+			&:nth-child(6)
+				width: 80px
+				height: 80px
+				border: 7px solid #FFFFFF
+				border-radius: 17px
+				position: absolute
+				top: 281px
+				left: 152px
 
 
 
@@ -2461,6 +2566,13 @@ ol
 	.program-info
 		&__photos
 			margin-top: 0
+	&__poster
+		width: 570px
+		height: auto
+		img
+			width: 100%
+			height: auto
+			border-radius: 20px
 	&__text
 		width: 543px
 		h2
@@ -3093,7 +3205,7 @@ ol
 
 
 .program-banner
-	background: no-repeat center / cover
+	background: no-repeat center top / cover
 	.breadcrumbs
 		ul
 			li
