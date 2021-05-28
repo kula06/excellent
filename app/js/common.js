@@ -110,7 +110,7 @@ $(function() {
       600: {
         items: 2,
         nav: false,
-        dots: true,
+        dots: false,
         margin: 22,
         touchDrag: true,
         mouseDrag: true
@@ -118,7 +118,7 @@ $(function() {
       900: {
         items: 2,
         nav: false,
-        dots: true,
+        dots: false,
         margin: 22,
         touchDrag: true,
         mouseDrag: true

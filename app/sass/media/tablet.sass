@@ -849,6 +849,7 @@
         width: 345px
         h2
           font-size: 26px
+          margin-right: -20px
         ul
           li
             font-size: 15px
@@ -1078,7 +1079,8 @@
   .container
     padding: 50px 0
 
-
+  &__poster
+    width: 345px
 
   &__text
     width: 345px
@@ -1264,23 +1266,87 @@ ol
     font-size: 26px
   &__count
     font-size: 14px
+    display: none
   &__slider
-    max-width: 594px
+    //max-width: 594px
     .owl-item
       &:not(.active)
         opacity: 1
 
 
+.program-banner
+  .container
+    min-height: 456px
+
+  .breadcrumbs
+    display: none
+  &__content
+    max-width: 345px
+    padding: 129px 0 128px
+    h1
+      font-size: 28px
+    p
+      font-size: 13px
 
 
+.graduate
+  .container
+    padding: 50px 0 56px
+    display: block
+  &__text
+    width: 100%
+    h2
+      font-size: 20px
+      line-height: 120%
+    p
+      margin-top: 15px
+      font-size: 15px
+  &__list
+    margin: 30px 0 0 -9px
+    width: auto
+  &__item
+    margin: 9px 0 0 9px
+    width: calc(100% / 3 - 9px)
 
+.visas
+  .container
+    padding: 50px 0
+  &__text
+    h2
+      font-size: 26px
+    p
+      font-size: 15px
+      margin-top: 15px
+  &__item
+    .poster
+      width: 109px
+      height: 109px
+      min-width: 109px
+      margin-right: 21px
+    .text
+      h5, .title
+        padding-right: 10px
+      p
+        font-size: 12px
+        line-height: 140%
+  .btn
+    margin-top: 30px
+    min-width: 345px
 
+.salary-examples
+  .container
+    padding: 50px 0 86px
+  &__collage
+    display: none
 
-
-
-
-
-
+  &__text
+    h2
+      font-size: 26px
+    .double
+      margin-top: 20px
+      padding-top: 0
+      li
+        margin-bottom: 15px
 
 
 
