@@ -120,6 +120,7 @@ body
 	padding: 20px 0 12px
 	background: #fff
 	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.05)
+	width: 100%
 	&__menu-btn
 		display: none
 	&__logo
@@ -239,6 +240,20 @@ body
 	&__newline
 		width: 100%
 		margin-top: 20px
+
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 5
+		padding: 10px 0
+		.header
+			&__logo
+				display: none
+			&__menu
+				display: none
+			&__newline
+				display: none
 
 .main-banner
 	background: #FE990B
@@ -3261,6 +3276,7 @@ ol
 	&__navigation
 		display: flex
 		flex-direction: column
+		width: calc(100% - 930px)
 		.nav
 			margin-top: 7px
 			font-size: 14px
@@ -3336,6 +3352,27 @@ ol
 				select
 					background: #fff url(../img/select-arrow.svg) no-repeat center / 10px 6px
 					background-position-x: calc(100% - 24px)
+				&--line
+					display: flex
+					flex-wrap: wrap
+					flex-direction: row
+					.label
+						margin-right: auto
+					.check-row
+						margin-left: 13px
+				.range-inputs
+					display: flex
+					align-items: center
+					margin-top: 3px
+					justify-content: space-between
+					input
+						width: 130px
+						padding: 0 20px
+					.delimenter
+						font-size: 15px
+						line-height: 150%
+						color: #636365
+
 	&__items
 		margin-left: 50px
 		width: 770px
@@ -3391,6 +3428,49 @@ ol
 
 						font-weight: bold
 						font-size: 10px
+						cursor: pointer
+						position: relative
+						text-decoration: none
+						&:hover
+							background: #F87E1B
+						&:hover
+							&:before, &:after
+								display: block
+						&:after
+							content: ''
+							display: block
+							width: 10px
+							height: 8px
+							background: url(../img/info-triangle.svg) no-repeat center / contain
+							position: absolute
+							top: calc(100% + 4px)
+							left: 8px
+							display: none
+						&:before
+							content: attr(data-tip)
+							display: block
+							position: absolute
+							top: calc(100% + 12px)
+							left: 0px
+							padding: 10px 15px
+							background: #fff
+							border-radius: 4px
+							box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15)
+							width: 184px
+							font-weight: normal
+							font-size: 12px
+							line-height: 130%
+							color: #33302D
+							display: none
+						&--blue
+							border-color: #3661F7
+							&:hover
+								background: #3661F7
+								color: #fff
+						&--green
+							border-color: #A8D362
+							&:hover
+								background: #A8D362
 				.title
 					font-weight: 600
 					font-size: 24px
@@ -3464,6 +3544,56 @@ ol
 			&.active
 				background: #3661F7
 				color: #fff
+
+.irs--flat
+	height: 20px
+	margin-top: 5px
+	.irs-line, .irs-bar
+		height: 2px
+		top: 9px
+	.irs-line
+		background: #E2E3E8
+
+	.irs-bar
+		background: #3661F7
+	.irs-from, .irs-to, .irs-min, .irs-single, .irs-max
+		display: none
+	.irs-handle
+		width: 20px
+		height: 20px
+		border-radius: 50%
+		background: #FFF
+		border: 1px solid #E2E3E8
+		top: 0
+		i
+			display: none !important
+
+.check-row
+	display: flex
+	cursor: pointer
+	.text
+		font-size: 15px
+		line-height: 150%
+	.input
+		position: relative
+		margin-right: 10px
+		input
+			position: absolute
+			top: 100%
+			left: 0
+			width: 1px
+			height: 1px
+			opacity: 0
+			&:checked
+				& + .icon
+					background: #fff
+					border: 5px solid #F87E1B
+		.icon
+			width: 20px
+			height: 20px
+			background: #E2E3E8
+			border-radius: 50%
+			display: block
 
 .__hidden
 	display: none !important

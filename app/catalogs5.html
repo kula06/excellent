@@ -83,11 +83,11 @@
 				<p>Тут распологается SEO-текст. Он может быть, а может и не быть. Текст на 3-4 строчки, чтобы было видно карточки ниже. Тут распологается SEO-текст. Он может быть, а может и не быть. Текст на 3-4 строчки, чтобы было видно карточки.</p>
 			</div>
 			<div class="catalog-info__navigation">
-				<a href="#" class="nav active">Каникулярные туры</a>
+				<a href="#" class="nav">Каникулярные туры</a>
 				<a href="#" class="nav">Среднее образование</a>
 				<a href="#" class="nav">Высшее образование</a>
 				<a href="#" class="nav">Работа и стажировка</a>
-				<a href="#" class="nav">Иммиграция</a>
+				<a href="#" class="nav active">Иммиграция</a>
 			</div>
 		</div>
 	</div>
@@ -107,41 +107,26 @@
 					<div class="filter__row">
 						<span class="label">Страна</span>
 						<select>
-							<option value="">Великобритания</option>
-						</select>
-					</div>
-
-					<div class="filter__row">
-						<span class="label">Язык</span>
-						<select>
-							<option value="">🇬🇧  Английский</option>
-						</select>
-					</div>
-
-					<div class="filter__row">
-						<span class="label">Возраст</span>
-						<input type="text" placeholder="Введите число">
-					</div>
-
-					<div class="filter__row">
-						<span class="label">Сезон</span>
-						<select>
-							<option value="">Летний сезон</option>
-						</select>
-					</div>
-
-					<div class="filter__row">
-						<span class="label">Продолжительность</span>
-						<select>
 							<option value="">Любая</option>
 						</select>
 					</div>
 
 					<div class="filter__row">
-						<span class="label">Тип программы</span>
+						<span class="label">Тип имиграции</span>
 						<select>
-							<option value="">Любая</option>
+							<option value="">Все варианты</option>
 						</select>
+					</div>
+
+					<div class="filter__row">
+						<span class="label">Расходы, USD</span>
+						<div class="range-inputs">
+							<input type="text" value="от 50,000" data-type="from">
+							<div class="delimenter">-</div>
+							<input type="text" value="от 600,000" data-type="to">
+						</div>
+
+						<input type="text" class="js-range-slider" name="my_range" value="" data-min="0" data-max="1000"/>
 					</div>
 
 					<button class="btn btn--main-orange">Применить фильтр</button>
@@ -158,51 +143,7 @@
 								<div class="tags">
 									<div class="tag" data-tip="На данную программу действует скидка">-30%</div>
 									<div class="tag" data-tip="Сотрудники Excelenete рекомендуют!">👍🏼 рекомендуем</div>
-								</div>
-								<div class="title">Летние каникулы в Канаде, <br>г. Торонто</div>
-							</div>
-							<div class="lang">🇬🇧</div>
-						</div>
-
-						<div class="catalog-item__cols">
-							<div class="col">
-								<span class="label">Язык обучения</span>
-								<ul>
-									<li>английский</li>
-								</ul>
-							</div>
-							<div class="col">
-								<span class="label">Проживание</span>
-								<ul>
-									<li>семья</li>
-									<li>пансион</li>
-								</ul>
-							</div>
-							<div class="col">
-								<span class="label">Тип программы: </span>
-								<ul>
-									<li>индивидуальная</li>
-								</ul>
-							</div>
-
-							<div class="col">
-								<span class="label">семья</span>
-								<ul class="without-dots nowrap">
-									<li>2 недели - 3 200 USD</li>
-									<li>4 недели - 5 400 USD</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-item">
-					<div class="catalog-item__picture"><img src="img/catalog-item.jpg" alt=""></div>
-					<div class="catalog-item__text">
-						<div class="catalog-item__header">
-							<div class="title-group">
-								<div class="tags">
-									<div class="tag" data-tip="На данную программу действует скидка">-30%</div>
-									<div class="tag tag--blue" data-tip="Сотрудники Excelenete рекомендуют!">🔥 Популярно</div>
+									<div class="tag tag--green" data-tip="Сотрудники Excelenete рекомендуют!">💻 Возможно онлайн</div>
 								</div>
 								<div class="title">Летние каникулы в Канаде, <br>г. Торонто</div>
 							</div>
@@ -249,6 +190,59 @@
 					<div class="catalog-item__text">
 						<div class="catalog-item__header">
 							<div class="title-group">
+								<div class="tags">
+									<div class="tag" data-tip="На данную программу действует скидка">-30%</div>
+									<div class="tag" data-tip="Сотрудники Excelenete рекомендуют!">👍🏼 рекомендуем</div>
+								</div>
+								<div class="title">Летние каникулы в Канаде, <br>г. Торонто</div>
+							</div>
+							<div class="lang">🇬🇧</div>
+						</div>
+
+						<div class="catalog-item__cols">
+							<div class="col">
+								<span class="label">Язык обучения</span>
+								<ul>
+									<li>английский</li>
+									<li>корейский</li>
+									<li>китайский</li>
+								</ul>
+								<a href="#" class="more-link">Показать еще 4</a>
+							</div>
+							<div class="col">
+								<span class="label">Проживание</span>
+								<ul>
+									<li>семья</li>
+									<li>пансион</li>
+								</ul>
+							</div>
+							<div class="col">
+								<span class="label">Тип программы: </span>
+								<ul>
+									<li>индивидуальная</li>
+									<li>групповая</li>
+								</ul>
+							</div>
+
+							<div class="col">
+								<span class="label">семья</span>
+								<ul class="without-dots nowrap">
+									<li>2 недели - <b>3 200 USD</b> <s>3 200 USD</s></li>
+									<li>4 недели - <b>5 400 USD</b> <s>6 200 USD</s></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-item">
+					<div class="catalog-item__picture"><img src="img/catalog-item.jpg" alt=""></div>
+					<div class="catalog-item__text">
+						<div class="catalog-item__header">
+							<div class="title-group">
+								<div class="tags">
+									<div class="tag" data-tip="На данную программу действует скидка">-30%</div>
+									<div class="tag" data-tip="Сотрудники Excelenete рекомендуют!">👍🏼 рекомендуем</div>
+								</div>
 								<div class="title">Летние каникулы в Канаде, <br>г. Торонто</div>
 							</div>
 							<div class="lang">🇬🇧</div>

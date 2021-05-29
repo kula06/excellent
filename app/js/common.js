@@ -313,7 +313,7 @@ $(document).keyup(function(e) {
         }
       });
     }
-  })
+  });
 
 
   $('.table__rows.rows--scroll').mCustomScrollbar({
@@ -322,8 +322,48 @@ $(document).keyup(function(e) {
     }
   });
 
+  $(".js-range-slider").each(function(index, slider) {
+    $(slider).ionRangeSlider({
+          type: "double",
+          grid: false,
+          prefix: "",
+          onChange: function(e) {
+            var $range = $(slider).parent().find('.range-inputs');
+            $range.find('[data-type="from"]').val(e.from);
+            $range.find('[data-type="to"]').val(e.to);
+          }
+      });
+  });
+  $('.range-inputs input').change(function() {
+    var slider = $(this).closest('.filter__row').find('.js-range-slider').data('ionRangeSlider');
+    var dir = $(this).attr('data-type');
+console.log(slider)
+    slider.update({
+      [dir]: $(this).val()
+    });
+  });
+
+  $(window).scroll(function() {
+    if ($('.program-menu').length) {
+
+    } else {
+      var $target = $('.header');
+
+      if ($(this).scrollTop() > 20) {
+        $target.addClass('fixed');
+        $('body').css({
+          paddingTop: $target.outerHeight()
+        });
+      } else {
+        $target.removeClass('fixed');
+        $('body').css({
+          paddingTop: ''
+        });
+      }
+    }
+  });
 
   $(window).resize();
-
+  $(window).scroll();
 
 });
