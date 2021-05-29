@@ -337,7 +337,6 @@ $(document).keyup(function(e) {
   $('.range-inputs input').change(function() {
     var slider = $(this).closest('.filter__row').find('.js-range-slider').data('ionRangeSlider');
     var dir = $(this).attr('data-type');
-console.log(slider)
     slider.update({
       [dir]: $(this).val()
     });
@@ -349,16 +348,16 @@ console.log(slider)
     } else {
       var $target = $('.header');
 
+      $target.removeClass('fixed');
+      $('body').css({
+        paddingTop: ''
+      });
+
       if ($(this).scrollTop() > 20) {
-        $target.addClass('fixed');
         $('body').css({
           paddingTop: $target.outerHeight()
         });
-      } else {
-        $target.removeClass('fixed');
-        $('body').css({
-          paddingTop: ''
-        });
+        $target.addClass('fixed');
       }
     }
   });
