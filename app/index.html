@@ -775,6 +775,17 @@
 	</div>
 
 	<script src="js/scripts.min.js"></script>
+	<script>
+		$(function() {
+			$('.header__search-form .search-form__input').keyup(function() {
+				if ($(this).val().length) {
+					$(this).next().show();
+				} else {
+					$(this).next().hide();
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
