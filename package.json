@@ -24,5 +24,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "sass": "^1.34.0"
   }
 }

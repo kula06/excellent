@@ -1,6 +1,7 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "flags"
 
 *
 	-webkit-box-sizing: border-box
@@ -121,6 +122,8 @@ body
 	background: #fff
 	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.05)
 	width: 100%
+	z-index: 5
+	position: relative
 	&__menu-btn
 		display: none
 	&__logo
@@ -177,6 +180,35 @@ body
 
 				font-size: 15px
 				color: #33302D
+			&__search-result
+				position: absolute
+				top: calc(100% + 10px)
+				width: 100%
+				padding: 17px 27px 33px
+				background: #fff
+				display: flex
+				flex-direction: column
+				border: 1px solid #E2E3E8
+				box-shadow: 0px 4px 56px rgba(49, 60, 88, 0.2)
+				border-radius: 10px
+
+				.search-result
+					&__item
+						margin-top: 15px
+						text-decoration: none
+						font-size: 15px
+						color: #33302D
+						line-height: 110%
+						display: flex
+						&:hover
+							color: #F87E1B
+						.flag
+							width: 15px
+							min-width: 15px
+							height: 15px
+							margin-right: 17px
+				.advanced-link
+					margin: 20px 0 0 32px
 
 	&__phone
 		margin-left: 30px
