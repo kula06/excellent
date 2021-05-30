@@ -2965,6 +2965,37 @@ ol
 	.container
 		padding: 100px 0
 
+	&--rates
+		.container
+			padding-top: 0
+		.program-table
+			&__table
+				margin-top: 33px
+
+	.rate-empty
+		background: no-repeat center / contain
+		&--study
+			width: 448px
+			height: 390px
+			background-image: url(../img/rate_study.svg)
+			margin: 18px 0 30px 383px
+		&--user-study
+			width: 642px
+			height: 383px
+			background-image: url(../img/rate_user_study.svg)
+			margin: 56px 0 0px 232px
+		&--papper-study
+			width: 421px
+			height: 406px
+			background-image: url(../img/rate_papper_study.svg)
+			margin: 37px 0 0px 421px
+	&__rate-title
+		margin: 50px 0 0 30px
+		font-weight: 600
+		font-size: 26px
+		line-height: 110%
+		color: #000
+
 	&__text
 		max-width: 779px
 		h2
@@ -3001,7 +3032,7 @@ ol
 
 		.col
 			color: #2E2E2E
-			width: 150px
+			width: 170px
 			min-width: 151px
 			margin-right: 50px
 
@@ -3340,7 +3371,7 @@ ol
 					line-height: 150%
 					color: #636365
 					margin-bottom: 3px
-				select, input
+				input
 					height: 54px
 					border: 1px solid #E2E3E8
 					border-radius: 10px
@@ -3353,9 +3384,7 @@ ol
 					width: 200px
 					@include placeholder
 						color: #B3B3B3
-				select
-					background: #fff url(../img/select-arrow.svg) no-repeat center / 10px 6px
-					background-position-x: calc(100% - 24px)
+
 				&--line
 					display: flex
 					flex-wrap: wrap
@@ -3549,6 +3578,18 @@ ol
 				background: #3661F7
 				color: #fff
 
+select
+	height: 54px
+	border: 1px solid #E2E3E8
+	border-radius: 10px
+	width: 100%
+	font-size: 15px
+	padding: 0 27px
+	appearance: none
+	background: #fff
+	background: #fff url(../img/select-arrow.svg) no-repeat center / 10px 6px
+	background-position-x: calc(100% - 24px)
+
 .irs--flat
 	height: 20px
 	margin-top: 5px
@@ -3571,6 +3612,26 @@ ol
 		top: 0
 		i
 			display: none !important
+
+.catalog-select
+	margin-top: 21px
+	.container
+	&__form
+		background: #fff
+		box-shadow: 0px 4px 4px rgba(46, 50, 81, 0.04), 0px 4px 56px rgba(46, 50, 81, 0.08)
+		border-radius: 20px
+		padding: 35px 39px 35px 32px
+		display: flex
+		align-items: center
+		.description
+			max-width: 400px
+			margin-right: auto
+			font-weight: 300
+			font-size: 20px
+			line-height: 120%
+		select
+			width: 250px
+			margin-left: 30px
 
 .check-row
 	display: flex
