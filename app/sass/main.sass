@@ -122,12 +122,13 @@ body
 	top: 0
 	left: 0
 	width: 100%
-	z-index: 4
-	overflow-y: auto
+	z-index: 5
 	max-height: 100vh
 
 	&.fixed
 		position: fixed
+	&.opened
+		overflow-y: auto
 
 
 .header
@@ -166,6 +167,7 @@ body
 			content: ''
 			display: block
 			width: 9px
+			min-width: 9px
 			height: 6px
 			margin-left: 10px
 			background: url(../img/select-triangle.svg) no-repeat center right / contain

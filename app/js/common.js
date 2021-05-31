@@ -266,6 +266,18 @@ $(document).keyup(function(e) {
   }
 });
 
+  $('.search-form__search').click(function(e) {
+    if (!$(this).next().is(':visible')) {
+      e.preventDefault();
+      $(this).parent().addClass('view');
+    } else {
+      if (!$(this).next().val().length) {
+        e.preventDefault();
+        $(this).parent().removeClass('view');
+      }
+    }
+  });
+
   $('.catalog-content__filter .filter__show-btn').click(function(e) {
     e.preventDefault();
 
@@ -347,6 +359,7 @@ $(document).keyup(function(e) {
   $('.header__menu-btn').click(function(e) {
     var $header = $(this).closest('.header');
     $header.toggleClass('opened');
+    $('.header-wrapper').toggleClass('opened');
     if ($header.hasClass('opened')) {
       $('body, html').css({
         overflow: 'hidden'

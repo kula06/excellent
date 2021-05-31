@@ -16,7 +16,8 @@
     margin-top: 14px
   &__city
     width: 124px
-    margin-right: 50px
+    margin-right: 0
+    margin-left: 0
     select
       font-size: 15px
   &__menu
@@ -30,7 +31,7 @@
     flex-direction: column
     background: #F87E1B
     border-radius: 50%
-    margin-left: 25px
+    margin-left: auto
     span
       width: 16px
       height: 1px
@@ -42,11 +43,26 @@
     width: 19px
     display: block
     //margin-right: 39px
+    margin-left: 53px
     .search-form
       &__input
         display: none
       &__search
         left: 0
+    &.view
+      width: auto
+      margin-left: 28px
+      .search-form
+        &__input
+          display: block
+          width: 345px
+        &__search
+          left: 22px
+      & ~
+        .header__phone, .header__actions
+          display: none
+        .header__menu-btn
+          ///margin-left: 21px
   &__phone
     font-size: 14px
     line-height: 130%
