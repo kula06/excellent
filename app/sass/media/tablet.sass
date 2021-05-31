@@ -60,6 +60,76 @@
     .header
       &__logo
         display: block
+  &.opened
+    & + .header-mobile-menu
+      display: block
+
+
+.header-mobile-menu
+  background: #fff
+  &:after
+    content: ''
+    display: block
+    clear: both
+  .container
+    padding: 58px 0 100px
+    display: flex
+    flex-wrap: wrap
+  .contacts
+    &__email
+      margin-top: 15px
+    &__address
+      margin-top: 15px
+      max-width: 295px
+      font-size: 15px
+    &__socials
+      margin-top: 15px
+  .header
+    &__sub-info
+      margin-top: 5px
+      .copyright, .link, .dev
+        margin-top: 10px
+        font-size: 10px
+        line-height: 120%
+        color: #636365
+        text-decoration: none
+        a
+          font-weight: 600
+          text-decoration: none
+          color: inherit
+
+    &-col
+      & + .header-col
+        margin-left: 112px
+    &__city
+      display: none
+    &__actions
+      display: none
+    &__search-form
+      display: none
+    &__menu
+      width: 210px
+      display: block
+      margin: -20px 0 0
+      li
+        margin: 20px 0 0
+        a
+          font-size: 17px
+          line-height: 140%
+    &__phones
+      margin-top: 10px
+      display: flex
+      flex-direction: column
+
+      .phone
+        margin-top: 20px
+        font-weight: 600
+        font-size: 20px
+        line-height: 120%
+        text-decoration: none
+        color: #33302D
+    &__sub-menu
+      display: none
 
 .main-banner
   .container
@@ -1352,7 +1422,61 @@ ol
       li
         margin-bottom: 15px
 
+.catalog-info
+  margin-top: 15px
+  .container
 
+  &__text
+    width: 100%
+    h1
+      font-size: 28px
+    p
+      font-size: 15px
+  &__navigation
+    display: none
+
+.catalog-content
+  padding-top: 27px
+  &__result
+  &__sort
+    width: auto
+    margin-left: auto
+  &__filter
+    width: 100%
+    .filter
+      &__content
+        display: none
+      &__show-btn
+        display: block
+        background: #F4F6FB
+        border-radius: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 60px
+        font-size: 14px
+        &:before
+          content: ''
+          display: block
+          width: 15px
+          height: 15px
+          margin-right: 10px
+          background: url(../img/settings.svg) no-repeat center / contain
+  &__items
+    margin: 0
+    width: 100%
+    .catalog-item
+      &:first-child
+        padding-top: 30px
+      &__picture
+        margin-right: 40px
+      &__header
+        .title
+          font-size: 20px
+
+  &__pagination
+    width: 100%
+    justify-content: center
 
 
 

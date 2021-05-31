@@ -17,6 +17,47 @@
     margin-left: 19px
   &__logo
     margin-right: auto
+.header-mobile-menu
+  .container
+    padding-top: 26px
+    padding-bottom: 36px
+  .btn
+    margin-top: 50px
+  .header
+    &-col
+      & + .header-col
+        margin-left: 0
+    &__city
+      display: flex
+    &__actions
+      display: flex
+      margin-left: auto
+    &__search-form
+      display: block
+      width: 100%
+      margin-top: 33px
+      .search-form
+        &__input
+          display: block
+        &__search
+          width: 19px
+          height: 19px
+          left: 22px
+    &__menu
+      margin-top: 33px
+    &__sub-menu
+      display: flex
+      flex-wrap: wrap
+      margin-top: 2px
+      margin-left: -25px
+      li
+        margin-left: 25px
+        display: block
+        margin-top: 10px
+        a
+          text-decoration: none
+          color: #33302D
+
 
 
 .main-banner
@@ -730,9 +771,32 @@
     .double
       column-count: inherit
 
+.catalog-info
+  &__text
+    p
+      font-size: 13px
 
+.catalog-content
+  padding-top: 16px
 
-
+  &__result
+    order: -1
+  &__filter
+    order: 0
+    margin-top: 16px
+  &__sort
+    order: 1
+    margin-top: 20px
+    margin-left: 0
+  &__items
+    order: 1
+    .catalog-item
+      display: block
+      &__picture
+        width: 100%
+      &__text
+        margin-top: 20px
+        width: 100%
 
 
 

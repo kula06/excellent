@@ -117,6 +117,19 @@ body
 		border-bottom: 1px dashed #F81B1B
 		display: table
 
+.header-wrapper
+
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 4
+	overflow-y: auto
+	max-height: 100vh
+
+	&.fixed
+		position: fixed
+
+
 .header
 	padding: 20px 0 12px
 	background: #fff
@@ -286,6 +299,24 @@ body
 				display: none
 			&__newline
 				display: none
+
+	&.opened
+		.header
+			&__menu-btn
+				span
+					&:not(:first-child):not(:last-child)
+						display: none
+					&:first-child
+						transform: rotate(45deg)
+						margin-bottom: 0px
+					&:last-child
+						transform: rotate(-45deg)
+						margin-top: -1px
+
+.header-mobile-menu
+	display: none
+	margin-top: -2px
+
 
 .main-banner
 	background: #FE990B
@@ -1506,47 +1537,6 @@ body
 		width: 247px
 		.btn
 			margin-top: 30px
-		.contacts
-			&__phone
-				font-weight: 600
-				font-size: 24px
-				line-height: 120%
-				color: #33302D
-				display: table
-				text-decoration: none
-			&__email
-				margin-top: 26px
-				display: table
-				font-weight: bold
-				line-height: 140%
-				color: #3661F7
-				text-decoration: none
-				font-size: 18px
-			&__address
-				margin-top: 24px
-				font-weight: 300
-				font-size: 16px
-				line-height: 150%
-				color: #33302D
-			&__socials
-				margin-top: 47px
-				display: flex
-				margin-left: -6px
-				li
-					display: block
-					margin-left: 6px
-					a
-						display: flex
-						align-items: center
-						justify-content: center
-						width: 42px
-						height: 42px
-						border: 1px solid #E4E9EA
-						border-radius: 50%
-						color: #E4E9EA
-						svg
-							width: 16px
-							height: 16px
 
 	&__sub-info
 		margin-top: 87px
@@ -1569,6 +1559,48 @@ body
 				text-decoration: none
 				font-weight: bold
 				color: #3661F7
+
+.contacts
+	&__phone
+		font-weight: 600
+		font-size: 24px
+		line-height: 120%
+		color: #33302D
+		display: table
+		text-decoration: none
+	&__email
+		margin-top: 26px
+		display: table
+		font-weight: bold
+		line-height: 140%
+		color: #3661F7
+		text-decoration: none
+		font-size: 18px
+	&__address
+		margin-top: 24px
+		font-weight: 300
+		font-size: 16px
+		line-height: 150%
+		color: #33302D
+	&__socials
+		margin-top: 47px
+		display: flex
+		margin-left: -6px
+		li
+			display: block
+			margin-left: 6px
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 42px
+				height: 42px
+				border: 1px solid #E4E9EA
+				border-radius: 50%
+				color: #E4E9EA
+				svg
+					width: 16px
+					height: 16px
 
 .breadcrumbs
 	padding-top: 20px
