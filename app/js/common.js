@@ -292,6 +292,14 @@ $(document).keyup(function(e) {
     });
 
     $( $(this).attr('href') ).show();
+
+    setTimeout(function() {
+      $('.table__rows.rows--scroll').mCustomScrollbar({
+        scrollButtons: {
+          enable: false
+        }
+      });
+    }, 10);
   }).filter(':first-child').click();
 
   $(document).on('click', '[data-toggle-target]', function(e) {
@@ -334,11 +342,7 @@ $(document).keyup(function(e) {
   });
 
 
-  $('.table__rows.rows--scroll').mCustomScrollbar({
-    scrollButtons: {
-      enable: false
-    }
-  });
+
 
   $('.header__menu-btn').click(function(e) {
     var $header = $(this).closest('.header');

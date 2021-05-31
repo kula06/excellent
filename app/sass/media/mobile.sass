@@ -650,6 +650,21 @@
       &__header
         display: none
       &__rows
+        &.rows--scroll
+          .row
+            .col
+              display: flex
+              flex-direction: column-reverse
+              align-items: flex-start
+              justify-content: flex-start
+              font-size: 11px
+              &:after
+                margin-bottom: 5px
+              .price
+                .old
+                  font-size: 14px
+                .current
+                  font-size: 13px
         .row
           flex-wrap: wrap
           padding: 8px 15px 13px
