@@ -611,11 +611,31 @@
       &__item
         height: auto
 
-
+.catalog-select
+  &__form
+    display: block
+    padding: 20px
+    select
+      margin-left: 0
+      width: 100%
+      margin-top: 15px
 
 .program-table
   .container
     padding: 50px 0
+  &__rate-title
+    margin-top: 0
+    margin-left: 0
+  .rate-empty
+    &--papper-study
+      width: 250px
+      height: 250px
+    &--user-study
+      width: 250px
+      height: 150px
+    &--study
+      width: 250px
+      height: 250px
   &__name
     margin-top: 33px
     font-weight: 600
@@ -786,6 +806,22 @@
   &__filter
     order: 0
     margin-top: 16px
+
+    &.opened
+      .filter
+        &__content
+          padding: 26px 15px 58px
+          margin-left: 0
+          .btn
+            width: 100%
+            &--reset
+              width: auto
+        &__title
+          margin-left: 0
+        &__row
+          width: 100%
+          margin-left: 0
+
   &__sort
     order: 1
     margin-top: 20px
@@ -799,6 +835,17 @@
       &__text
         margin-top: 20px
         width: 100%
+      &__cols
+        column-count: inherit
+        width: 100%
+      &__header
+        .lang
+          width: 50px
+          min-width: 50px
+          height: 50px
+          .flag
+            width: 30px
+            height: 45px
 
   &__pagination
     .next

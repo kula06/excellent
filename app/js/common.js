@@ -266,6 +266,24 @@ $(document).keyup(function(e) {
   }
 });
 
+  $('.catalog-content__filter .filter__show-btn').click(function(e) {
+    e.preventDefault();
+
+    $(this).parent().addClass('opened');
+    $('body, html').css({
+      overflow: 'hidden'
+    });
+  });
+
+  $('.filter__close').click(function(e) {
+    e.preventDefault();
+
+    $(this).closest('.catalog-content__filter').removeClass('opened');
+    $('body, html').css({
+      overflow: ''
+    });
+  });
+
   $('.tabs__tab, .price__tab, .line-tabs__tab').click(function(e) {
     e.preventDefault();
 

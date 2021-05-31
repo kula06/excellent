@@ -1094,10 +1094,21 @@
           margin-top: 14px
           font-size: 24px
 
+.catalog-select
+  &__form
+    .description
+      font-size: 15px
 
 .program-table
   .container
     padding: 50px 0 60px
+  .rate-empty
+    &--study
+      margin-left: 0
+    &--user-study
+      margin-left: 0
+    &--papper-study
+      margin-left: 0
   h2
     font-size: 26px
   p
@@ -1443,6 +1454,70 @@ ol
     margin-left: auto
   &__filter
     width: 100%
+    &.opened
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100px
+      margin: 0
+      z-index: 5
+      .filter
+        &__show-btn
+          display: none
+        &__content
+          display: flex
+          flex-wrap: wrap
+          align-items: flex-start
+          padding: 46px 47px 65px
+          //min-height: 100vh
+          position: relative
+          margin-left: -34px
+          max-height: 100vh
+          overflow-y: auto
+          .btn
+            width: 290px
+            &--reset
+              width: auto
+        &__close
+          width: 40px
+          height: 40px
+          border: 2px solid #AAAAB7
+          border-radius: 50%
+          display: block
+          position: absolute
+          top: 20px
+          right: 20px
+          opacity: .3
+          &:before, &:after
+            content: ''
+            display: block
+            height: 2px
+            width: 19px
+            background: #AAAAB7
+            border-radius: 50px
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto
+          &:before
+            transform: rotate(-45deg)
+          &:after
+            transform: rotate(45deg)
+        &__title
+          display: block
+          width: 100%
+          color: #33302D
+          font-weight: 600
+          font-size: 24px
+          line-height: 120%
+          margin-left: 34px
+        &__row
+          width: calc(50% - 34px)
+          margin-left: 34px
+          margin-top: 15px
     .filter
       &__content
         display: none
