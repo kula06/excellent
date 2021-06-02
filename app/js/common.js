@@ -414,6 +414,30 @@ $(document).keyup(function(e) {
     });
   });
 
+  $('.world-block [data-country]').click(function() {
+    var countryCode = $(this).attr('data-country');
+
+    var $btns = $('.world-block [data-country="'+countryCode+'"]');
+    if ($btns.hasClass('active'))
+      return;
+    $btns.addClass('active').siblings().removeClass('active');
+
+    $('.world-block .mark-text').mCustomScrollbar('destroy');
+
+    $('.world-block .mark-text').mCustomScrollbar({
+      scrollButtons: {
+        enable: false
+      }
+    });
+
+  });
+
+  $('.world-block__map svg path').click(function() {
+    var countryCode = $(this).attr('id');
+    $('.world-block [data-country="'+countryCode+'"]').click();
+  });
+
+
   $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
     var windowHeight = $(this).height();
@@ -430,12 +454,12 @@ $(document).keyup(function(e) {
         $('body').css({
           paddingTop: $target.outerHeight()
         });
-        $('.header-wrapper').addClass('fixed');
+        $('.header-wrapper, .header').addClass('fixed');
       } else {
         $('body').css({
           paddingTop: ''
         });
-        $('.header-wrapper').removeClass('fixed');
+        $('.header-wrapper, .header').removeClass('fixed');
       }
     }
 
