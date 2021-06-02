@@ -322,7 +322,10 @@ $(document).keyup(function(e) {
 
     if (target === 'prev')
       $target = $(this).prev();
-
+    else if (target === 'parent')
+      $target = $(this).parent();
+    else if (target === 'current')
+      $target = $(this);
     else $target = $(target);
 
     $target.toggleClass('view-all');

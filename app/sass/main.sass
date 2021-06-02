@@ -2141,6 +2141,8 @@ body
 		justify-content: space-between
 	&__info
 		width: 543px
+		display: flex
+		flex-direction: column
 		h2
 			font-weight: 600
 			font-size: 34px
@@ -2180,6 +2182,8 @@ body
 				display: flex
 				align-items: flex-start
 				margin-left: -30px
+
+				order: 9
 			&__link
 				margin: 30px 0 0 30px
 				display: flex
@@ -2200,6 +2204,10 @@ body
 					color: #3661F7
 				br
 					display: none
+		.hide-next
+			order: 8
+			&:not(.view-all) ~ *:not(.info__links)
+				display: none
 
 	&__awards
 		width: 491px
@@ -2448,6 +2456,10 @@ ol
 			.hidden-link
 				& ~ *
 					display: none
+		.hide-text
+			order: 9
+			&:not(.view-all) ~ *
+				display: none
 
 	&__photo-collage
 		position: relative
