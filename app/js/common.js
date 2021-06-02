@@ -317,7 +317,15 @@ $(document).keyup(function(e) {
   $(document).on('click', '[data-toggle-target]', function(e) {
     e.preventDefault();
 
-    $( $(this).attr('data-toggle-target') ).toggleClass('view-all');
+    var target = $(this).attr('data-toggle-target');
+    var $target;
+
+    if (target === 'prev')
+      $target = $(this).prev();
+
+    else $target = $(target);
+
+    $target.toggleClass('view-all');
 
     var currentText = $(this).text();
     $(this).text( $(this).attr('data-toggle-text') );
