@@ -3955,7 +3955,7 @@ select
 		position: relative
 		width: 430px
 		padding: 46px 80px 60px
-
+		margin: 30px 0
 
 		&__close
 			width: 40px
@@ -4056,15 +4056,17 @@ select
 					margin-top: -4px
 					max-height: 388px
 					margin-left: -61px
-
+					padding-top: 20px
 				&__item
 					position: relative
-					margin-top: 20px
+
 					font-weight: 300
 					font-size: 17px
 					line-height: 140%
 					padding-left: 61px
 					padding-right: 25px
+					&:not(:first-child)
+						margin-top: 20px
 					&:before
 						content: ''
 						display: block
@@ -4082,6 +4084,7 @@ select
 			vertical-align: middle
 			text-align: left
 			width: 770px
+			max-width: 90%
 			height: 520px
 			border-radius: 10px
 			filter: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.26))

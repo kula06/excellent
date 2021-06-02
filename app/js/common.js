@@ -188,11 +188,12 @@ window.openPopup = function(el) {
     overflow: 'hidden'
   });
 
-  $('.popup .awards__list').mCustomScrollbar({
-    scrollButtons: {
-      enable: false
-    }
-  });
+  if ($(window).width() > 600)
+    $('.popup .awards__list').mCustomScrollbar({
+      scrollButtons: {
+        enable: false
+      }
+    });
 }
 
 window.closePopups = function(cover) {
