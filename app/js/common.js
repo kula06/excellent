@@ -459,6 +459,7 @@ $(document).keyup(function(e) {
       var $target = $('.header');
 
       if (scrollTop > 20) {
+        $('.header').removeClass('fixed');
         $('body').css({
           paddingTop: $target.outerHeight()
         });
