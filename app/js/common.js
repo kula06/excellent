@@ -449,6 +449,37 @@ $(document).keyup(function(e) {
     $('.world-block [data-country="'+countryCode+'"]').click();
   });
 
+  $(window).click(function(e) {
+    if ( $(e.target).closest('.custom-select').length )
+      return;
+
+    $('.custom-select').removeClass('opened');
+  });
+
+  $('.custom-select').click(function(e) {
+    if ($(e.target).hasClass('advanced-link'))
+      return;
+
+    var current_select = this;
+
+    $(current_select).toggleClass('opened');
+
+    $('.custom-select').filter(function() {
+      return !$(this).is(current_select);
+    }).removeClass('opened');
+  }).on('click', '.custom-select__options', function(e) {
+    if ($(e.target).hasClass('advanced-link'))
+      return;
+    e.stopPropagation();
+  });
+
+  $('.options__option').click(function() {
+    var $select = $(this).closest('.custom-select');
+    $select.find('.custom-select__selected').html( $(this).html() );
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $select.removeClass('opened');
+  });
+
 
   $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();

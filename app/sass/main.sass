@@ -3896,9 +3896,114 @@ select
 			font-weight: 300
 			font-size: 20px
 			line-height: 120%
-		select
+		.custom-select
 			width: 250px
 			margin-left: 30px
+
+.custom-select
+	max-height: 54px
+	border: 1px solid #E2E3E8
+	border-radius: 10px
+	background: #fff
+	cursor: pointer
+	position: relative
+	overflow: hidden
+	&--multiple
+		&.opened
+			max-height: inherit
+		.custom-select
+			&__options
+				position: static
+				box-shadow: none
+				padding: 0 27px 27px
+				border-radius: inherit
+	.flag
+		display: inline-block
+		vertical-align: middle
+		margin-top: -2px
+		margin-right: 3px
+	&.opened
+		overflow: visible
+		.custom-select
+			&__options
+				top: calc(100% + 12px)
+				opacity: 1
+	&__selected
+		font-size: 15px
+		line-height: 150%
+		color: #33302D
+		padding: 0 27px
+
+		height: 54px
+		display: flex
+		align-items: center
+
+		background: url(../img/select-arrow.svg) no-repeat center / 10px 6px
+		background-position-x: calc(100% - 24px)
+	&__options
+		cursor: auto
+		position: absolute
+		top: 100%
+		padding: 19px 20px
+		background: #fff
+		box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+		border-radius: 4px
+		width: 100%
+		opacity: 0
+		transition: .2s ease
+		display: flex
+		flex-direction: column
+		.options
+			&__option
+				font-weight: 300
+				font-size: 16px
+				line-height: 150%
+				cursor: pointer
+				&:not(:first-child)
+					margin-top: 10px
+				&.selected, &:hover
+					color: #F87E1B
+			&__checkbox
+				display: flex
+				cursor: pointer
+				input
+					width: 1px
+					height: 1px
+					position: absolute
+					left: 0
+					top: 100%
+					opacity: 0
+					&:checked + .checkbox__icon
+						&:after
+							opacity: 1
+				.checkbox
+					margin-right: 10px
+					&__icon
+						background: #E2E3E8
+						width: 20px
+						min-width: 20px
+						height: 20px
+						border-radius: 4px
+						position: relative
+						overflow: hidden
+						&:after
+							content: ''
+							display: block
+							width: 100%
+							height: 100%
+							background: #F87E1B url(../img/checkbox.svg) no-repeat center / 10px 9px
+							opacity: 0
+					&:after
+						content:
+				&:not(:first-child)
+					margin-top: 11px
+		.hide-options
+			order: 9
+			&:not(.view-all)
+				& ~ *
+					display: none
+		.advanced-link
+			margin-top: 18px
 
 .check-row
 	display: flex
