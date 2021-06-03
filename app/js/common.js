@@ -489,7 +489,7 @@ $(document).keyup(function(e) {
       if (href == '#')
         return;
       var $target = $( href );
-      if ($target.position().top+$target.outerHeight() > scrollTop+menuHeight) {
+      if ($target.position().top+$target.outerHeight()-10 > scrollTop+menuHeight) {
         $(this).addClass('active'); return false;
       }
     });
