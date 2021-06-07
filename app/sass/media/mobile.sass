@@ -18,6 +18,9 @@
     margin-left: auto
   &__logo
     margin-right: auto
+  &.opened
+    & ~ .program-menu
+      display: none
 .header-mobile-menu
   .container
     padding-top: 26px
@@ -61,7 +64,28 @@
           text-decoration: none
           color: #33302D
 
-
+.program-menu
+  position: static
+  .container
+    padding: 0
+    margin: 0
+    overflow-y: scroll
+    width: 100%
+  .menu
+    flex-wrap: nowrap
+    padding: 14px 15px
+    margin-left: 0
+    &:after
+      content: ''
+      display: block
+      min-width: 15px
+      height: 1px
+    li
+      &:first-child
+        margin-left: 0
+      a
+        white-space: nowrap
+        font-size: 13px
 
 .main-banner
   .container
