@@ -448,6 +448,11 @@ $(document).keyup(function(e) {
 
   });
 
+  $('.mark-close').click(function(e) {
+    e.stopPropagation();
+    $('.world-block [data-country]').removeClass('active');
+  });
+
   $('.world-block__map svg path').click(function() {
     var countryCode = $(this).attr('id');
     $('.world-block [data-country="'+countryCode+'"]').click();
