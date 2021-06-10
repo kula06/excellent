@@ -250,8 +250,14 @@ $(document).on('click', '.openPopup', function(e) {
   e.preventDefault();
   openPopupByTarget(this);
 });
-$(document).on('click', '.cover-form, .cover-form .close, .cover-form .close-all', function(e) {
-  if (e.target != this)
+
+var downTarget;
+$(document).on('mousedown', '.cover-form', function(e) {
+  downTarget = e.target;
+});
+
+$(document).on('mouseup', '.cover-form, .cover-form .close, .cover-form .close-all', function(e) {
+  if (e.target != this || downTarget != e.target)
     return;
   closePopups(true);
   return false;
