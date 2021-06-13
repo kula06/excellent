@@ -205,6 +205,16 @@ $(function() {
     }
   });*/
 
+  function popupScroll() {
+    $('.popup .awards__list').mCustomScrollbar('destroy');
+    if ($(window).width() > 768)
+      $('.popup .awards__list').mCustomScrollbar({
+        scrollButtons: {
+          enable: false
+        }
+      });
+  }
+
   window.globalRedirect = '';
 
 window.openPopup = function(el) {
@@ -219,12 +229,7 @@ window.openPopup = function(el) {
     overflow: 'hidden'
   });
 
-  if ($(window).width() > 600)
-    $('.popup .awards__list').mCustomScrollbar({
-      scrollButtons: {
-        enable: false
-      }
-    });
+  popupScroll();
 }
 
 window.closePopups = function(cover) {
@@ -405,6 +410,8 @@ $(document).keyup(function(e) {
         }
       });
     }
+
+    popupScroll();
   });
 
 
