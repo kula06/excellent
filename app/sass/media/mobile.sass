@@ -69,7 +69,7 @@
   .container
     padding: 0
     margin: 0
-    overflow-y: scroll
+    overflow-x: hidden
     width: 100%
   .menu
     flex-wrap: nowrap
@@ -86,6 +86,11 @@
       a
         white-space: nowrap
         font-size: 13px
+
+@media (hover: none) and (pointer: coarse)
+  .program-menu
+    .container
+      overflow-x: scroll
 
 .main-banner
   .container
