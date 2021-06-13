@@ -1843,9 +1843,8 @@ body
 					border-radius: 4px
 					object-fit: cover
 				.owl-item
-					&.active
-						& ~ .owl-item
-							opacity: .4
+					&:not(.current)
+						opacity: .4
 
 .details
 
@@ -2037,6 +2036,11 @@ body
 				cursor: pointer
 				.label
 					display: none
+				&.active
+					border-color: #3661f7
+					color: #3661f7
+					.label
+						color: #3661f7
 
 .programs-variation
 	.container
