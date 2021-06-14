@@ -467,7 +467,7 @@
 		<div class="container">
 			<div class="text">Подпишись на наши новости и акции!</div>
 
-			<form action="">
+			<form action="" onsubmit="openPopup('#successPopup'); return false;">
 				<input type="text" placeholder="Введите имя">
 				<button class="btn btn--main-blue btn--send-icon" type="submit">Подписаться</button>
 			</form>
@@ -579,7 +579,7 @@
 				<button class="btn btn--main-orange" type="submit">Отправить заявку</button>
 			</form>
 		</div>
-		<div class="popup __hidden">
+		<div class="popup" id="successPopup">
 			<div class="popup__close close"></div>
 			<img src="img/correct.svg" alt="">
 			<div class="popup__title">Ваша заявка отправлена! </div>
