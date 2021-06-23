@@ -199,6 +199,7 @@
       display: none
 
     &__items
+      max-width: 100%
       .stat
         &:not(:first-child)
           border: 0
@@ -241,6 +242,7 @@
 .reviews
   .container
     padding: 50px 0
+    position: relative
   h2
     br
       display: block
@@ -252,6 +254,7 @@
     margin-top: 27px
     width: 100%
     max-width: 286px
+    position: static
     .review
       &__picture
         margin-top: 20px
@@ -260,9 +263,19 @@
       margin-top: 30px
       width: calc(100vw - 30px)
 
+    .owl-stage-outer
+      position: static
+
+    .owl-nav
+      button
+        &.owl-next
+          right: 0
+          top: 300px
+
 .cooperate
   .container
     padding: 50px 0 60px
+    position: relative
   h2
     max-width: 310px
   .info-block
@@ -271,16 +284,20 @@
     margin-top: 28px
     width: 100%
     max-width: 284px
+    position: static
     .partner
       min-height: 222px
     .owl-dots
       width: calc(100vw - 30px)
-    .cooperate__slider
-      .owl-nav
-        button.owl-next
-          top: 101px
-        button.owl-prev
-          display: none
+    .owl-stage-outer
+      position: static
+
+    .owl-nav
+      button.owl-next
+        top: 308px
+        right: 0
+      button.owl-prev
+        display: none
   &--orange
     .container
       padding: 55px 0
@@ -289,7 +306,8 @@
     .cooperate__slider
       .owl-nav
         button.owl-next
-          top: 88px
+          top: 288px
+          right: 0
 
 
 .wecare
@@ -329,6 +347,7 @@
       color: #88A0F4
   &__expert
     flex-wrap: wrap
+    justify-content: center
     .expert
       &__quote
         width: 100%
@@ -348,6 +367,22 @@
       &__text
         .name
           max-width: 150px
+    &--expert-first
+      flex-direction: column
+      .expert
+        &__quote
+          order: 10
+          margin-top: 10px
+          &:before
+            display: none
+        &__picture
+          margin-right: 0
+        &__text
+          margin-top: 10px
+          .name, .position
+            text-align: center
+            width: 100%
+            max-width: 100%
 
 .hide-on-table-device
   display: block
@@ -392,6 +427,7 @@
     font-size: 15px
   form
     margin-top: 15px
+    max-width: 100%
 
 .footer
   .container
@@ -453,6 +489,10 @@
   &__collage
     margin-right: 0
     margin-left: 69px
+  &__text
+    max-width: 100%
+  .btn
+    min-width: 0
 
 .salary-info
   .container
@@ -464,13 +504,23 @@
     font-size: 15px
 
 .universities
+  .container
+    position: relative
   &__slider
     max-width: 286px
+    position: static
+    .owl-stage-outer
+      position: static
     .owl-dots
       width: calc(100vw - 30px)
     .owl-item
       &:not(.active)
         opacity: .3
+    .owl-nav
+      button
+        &.owl-next
+          right: 0
+          top: 240px
   &__count
     order: 5
     margin-top: 34px
@@ -490,6 +540,8 @@
       height: auto
       margin: 15px 0 5px
       border-radius: 10px
+    .btn
+      min-width: 0
 
   &__poster
     margin-top: 20px
@@ -550,6 +602,9 @@
             width: calc(50% - 60px)
       .btn
         margin: 30px 0 40px
+        min-width: 0
+    .about-program__poster
+      max-width: 100%
   &--tabs
     .about-program
       &__text
@@ -557,7 +612,9 @@
         .line-tabs
           &__tab
             margin-left: 5px
-
+  &--space
+    .about-program__poster
+      max-width: 100%
 
 .program-includes
   .container
@@ -589,6 +646,8 @@
   &__poster
     margin-top: 20px
   &__text
+    .btn
+      min-width: 0
     img
       width: 100%
       border-radius: 10px
@@ -611,10 +670,12 @@
   &__text
     position: relative
     z-index: 1
+    max-width: 100%
     h2
       max-width: 293px
     .btn
       margin-top: 353px
+      min-width: 0
 
   &__testframe
     height: 350px
@@ -802,6 +863,10 @@
 .salary
   &__img
     display: none
+  &__text
+    max-width: 100%
+    margin-left: 0
+    width: 100%
 
 .advanced-payments
   .container
@@ -849,6 +914,8 @@
   &__content
     padding: 65px 0 100px
     min-height: 0
+    .btn
+      min-width: 0
 
 .graduate
   &__list
@@ -860,8 +927,11 @@
   &__items
     display: block
     margin-top: -10px
+    margin-left: 0
   &__item
     margin-top: 30px
+    width: 100%
+    margin-left: 0
 
 .salary-examples
   .container
@@ -907,6 +977,8 @@
     order: 1
     .catalog-item
       display: block
+      max-width: 450px
+      margin: 0 auto
       &__picture
         width: 100%
       &__text
@@ -926,6 +998,8 @@
             height: 45px
 
   &__pagination
+    max-width: 450px
+    margin: 0 auto
     .next
       margin-left: auto
     .prev

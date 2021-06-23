@@ -3620,9 +3620,18 @@ ol
 		line-height: 140%
 		color: #B3B3B3
 		display: flex
+		align-items: center
 		margin-left: 45px
-		.advanced-link
+		.custom-select
 			margin: 0 0 0 7px
+			border: 0
+			&__selected
+				height: auto
+				padding: 3px 5px 4px 0
+			.advanced-link
+				margin: 0
+
+
 
 	&__filter
 		width: 350px
@@ -3953,11 +3962,12 @@ select
 		margin-right: 3px
 	&.opened
 		overflow: visible
+		z-index: 2
 		.custom-select
 			&__options
 				top: calc(100% + 12px)
 				opacity: 1
-	&__selected
+	&__selected:not(.advanced-link)
 		font-size: 15px
 		line-height: 150%
 		color: #33302D
@@ -4315,6 +4325,7 @@ select
 	align-items: inherit
 	justify-content: inherit
 	flex-wrap: inherit
+	max-width: 100%
 
 .view-on-mobile-device
 	display: none

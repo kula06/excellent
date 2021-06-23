@@ -374,6 +374,9 @@
 
     .owl-item
       opacity: 1
+      &:not(.active)
+        opacity: 0
+
     .owl-item.active~.owl-item:not(.active)
       opacity: .3
 
@@ -700,6 +703,7 @@
   &__photos
     margin-top: 35px
     width: 345px
+    max-width: 100%
     .photos
       &__main-slider
         img
@@ -883,6 +887,7 @@
     margin: 0
   &__text
     width: 345px
+    max-width: 100%
     h2
       font-size: 26px
       padding-bottom: 5px
@@ -1019,6 +1024,7 @@
   &__text
     margin-top: 0
     width: 345px
+    max-width: 100%
     p
       margin-top: 15px
       font-size: 15px
@@ -1380,7 +1386,10 @@ ol
     .owl-item
       &:not(.active)
         opacity: 1
-
+  .university
+    &:hover
+      &:before
+        display: none
 
 .program-banner
   .container

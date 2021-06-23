@@ -18,6 +18,14 @@ $(function() {
          touchDrag: true,
          mouseDrag: true,
        },
+       500: {
+         items: 2,
+         nav: true,
+         dots: true,
+         margin: 22,
+         touchDrag: true,
+         mouseDrag: true,
+       },
        600: {
          items: 2,
          nav: true,
@@ -57,6 +65,12 @@ $(function() {
         margin: 9,
       },
       600: {
+        items: 2,
+        nav: true,
+        dots: true,
+        margin: 9,
+      },
+      767: {
         items: 2,
         nav: false,
         dots: true,
@@ -138,7 +152,15 @@ $(function() {
         touchDrag: true,
         mouseDrag: true
       },
-      600: {
+      480: {
+        items: 2,
+        nav: true,
+        dots: true,
+        margin: 9,
+        touchDrag: true,
+        mouseDrag: true
+      },
+      767: {
         items: 2,
         nav: false,
         dots: false,
@@ -405,6 +427,8 @@ $(document).keyup(function(e) {
       });
     }
 
+    //$('.owl-carousel').trigger('refresh.owl.carousel');
+
     popupScroll();
   });
 
@@ -509,7 +533,7 @@ $(document).keyup(function(e) {
   });
 
   $('.custom-select').click(function(e) {
-    if ($(e.target).hasClass('advanced-link'))
+    if ($(e.target).is('[data-toggle-target]'))
       return;
 
     var current_select = this;
@@ -520,7 +544,7 @@ $(document).keyup(function(e) {
       return !$(this).is(current_select);
     }).removeClass('opened');
   }).on('click', '.custom-select__options', function(e) {
-    if ($(e.target).hasClass('advanced-link'))
+    if ($(e.target).is('[data-toggle-target]'))
       return;
     e.stopPropagation();
   });
